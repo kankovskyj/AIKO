@@ -1,94 +1,16 @@
 //SASS RULESETS
-$headFont: 'Nunito', sans-serif;
-$headFontTwo: 'Permanent Marker', cursive;
-
 //START
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+body {
+    background: red;
 }
-header {
-.visible-wrapper {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    color: black;
-    background: white;
-    i {
-        font-size: 30px;
-        margin: 15px;
-    }
-    a {
-        font-size: 30px;
-        padding-top: 2px ;
-        font-family: $headFont;
-        vertical-align: middle;
-    }
-    .fa-chevron-up {
-        visibility: hidden;
-    }
+p {
+    color: red;
 }
+.first-image {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/IMAGES/Vrstva\ 2.png);
 }
-
-.list {
-    display: none;
+.second-image {
+    background-image: url(/IMAGES/upper.png);
 }
-
-main {
-.landing-image {
-    height: 80vh;
-    background:linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)70%), url('https://i.ibb.co/zQjL543/MQ2-A4518-C-B.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    //filter: brightness(40%);
-}
-    h1 {
-        font-family: $headFont;
-        position: absolute;
-        bottom: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-family: $headFontTwo;
-        font-size: 50px;
-        letter-spacing: 6px;
-        //animate text jako v music videu
-    }
-    .btn-listen {
-        width: 180px;
-        height: 55px;
-        position: absolute;
-        bottom: 12%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: rgb(255,255,255);
-        background: linear-gradient(103deg, rgba(255,255,255,1) 70%, rgba(230,230,230,1) 100%);
-        border-radius: 8px;
-        box-shadow: 2px 10px #888888;
-        p {
-            text-align: center;
-            vertical-align: middle;
-            line-height: 60px;
-            font-family: $headFont;
-            letter-spacing: 4px;
-            font-size: 20px;
-        }
-    }
-}
-
-//MEDIA QUERIES
-@media only screen and (min-width: 768px)  { 
-    p {
-        color: blue;
-        font-size: 54px;
-    }
-}
-@media (min-width: 991.98px) { 
-    
- }
-@media (min-width: 1199.98px) { 
-    
- }
