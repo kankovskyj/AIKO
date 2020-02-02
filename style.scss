@@ -1,124 +1,96 @@
 //SASS RULESETS
 $color-red: #9C4031;
 $color-blue: #72C2BE;
+$font-heading: 'Nunito', sans-serif;
+
 //START
 * {
     margin: 0;
     padding: 0;
 }
 body {
-    background: white;
+	background: #010101;
+	width: 100%;
 }
-.landing-image {
-    width: 100vw;
-    height: 90vh;
-    background-image: url(/IMAGES/landingimg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    background-attachment: fixed;
-}
-.crowd-image {
-    width: 100vw;
-    height: 50vh;
-    background-image: url(/IMAGES/upper.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    top: 44%;
-}
-.fog-image {
-    width: 100vw;
-    height: 100vh;
-    background-image: url(/IMAGES/clouds.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    top: 0%;
-    opacity: 0.2;
-}
+main {
 
-//glitch?
-.glitch {
-	font: {
-		size: 5.125em;
-		family: 'Raleway', sans-serif;
-		weight: 700;
-	}
-	text-decoration: none;
-	text-transform: uppercase;
-	position: absolute;
-	top: 30%;
-	left: 15%;
-	transform: translate(-50%, -50%);
-	margin: 0;
-	color: white;
-	letter-spacing: 5px;
-	
-	&:before, &:after {
-		display: block;
-		content: attr(data-glitch);
-		text-transform: uppercase;
+	nav {
+		font-family: $font-heading;
 		position: absolute;
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: 100%;
-		opacity: .8;
-	} &:after {
-		color: $color-blue;
-		z-index: -2;
-	} &:before {
-		color: $color-red;
-		z-index: -1;
-	}
-	&:hover {
-		&:before {
-			animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both 5
+		z-index: 5;
+		top: 50%;
+		left: 20%;
+		transform: translate(-50%,-50%);
+		overflow: hidden;
+		ul {
+			list-style-type: none;
+			li {
+				width: 100%;
+				a {
+					color: white;
+					text-decoration: none;
+					font-size: 5rem;
+					text-align: center;
+					letter-spacing: 8px;
+					text-shadow:-2px -2px 0 #72C2BE, 2px 2px 0 #9C4031;
+				}
+			}
 		}
-		&:after {
-			animation: glitch .3s cubic-bezier(.25, .46, .45, .94) reverse both 5
-		}
+	}
+	.landing-image {
+		width: 100vw;
+		height: 85vh;
+		background-image: url(IMAGES/landingimg.png);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: bottom;
+		background-size: cover;
+		position: relative;
+		z-index: 1;
+		overflow: hidden;
+	}
+	.crowd-image {
+		width: 100vw;
+		height: 100vh;
+		background-image: url(IMAGES/upper.png);
+		background-repeat: no-repeat;
+		background-position: bottom;
+		background-size: cover;
+		position: absolute;
+		bottom: 10%;
+		z-index: 3;
+		overflow: hidden;
+		//filter: brightness(0%);
+	}
+	.fog-image {
+		width: 100vw;
+		height: 100vh;
+		background-image: url(/AIKO/IMAGES/clouds.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		position: absolute;
+		top: 0%;
+		opacity: 0.3;
+		z-index: 3;
+		overflow: hidden;
 	}
 }
-
-@media only screen and (max-width: 400px) {
-	.glitch {
-		font-size: 3em;
+//BIO PAGE
+.bio {
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+	p {
+		color: #FB4264;
+		line-height: 9vw;
+  		text-shadow: 0 0 3vw #F40A35;
 	}
-}
-
-
-@keyframes glitch {
-	0% {
-		transform: translate(0)
+	div {
+		position: absolute;
+		top: 90%;
+		width: 334px;
+		height: 333px;
+		background-color: red;
 	}
-	20% {
-		transform: translate(-5px, 5px)
-	}
-	40% {
-		transform: translate(-5px, -5px)
-	}
-	60% {
-		transform: translate(5px, 5px)
-	}
-	80% {
-		transform: translate(5px, -5px)
-	}
-	to {
-		transform: translate(0)
-	}
-}
-//glitchend
-
-
-
-
-
-p {
-    font-size: 2rem;
-    color: red;
 }

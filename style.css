@@ -4,152 +4,95 @@
 }
 
 body {
-  background: white;
+  background: #010101;
+  width: 100%;
 }
 
-.landing-image {
+main nav {
+  font-family: "Nunito", sans-serif;
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 20%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+main nav ul {
+  list-style-type: none;
+}
+
+main nav ul li {
+  width: 100%;
+}
+
+main nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 5rem;
+  text-align: center;
+  letter-spacing: 8px;
+  text-shadow: -2px -2px 0 #72C2BE, 2px 2px 0 #9C4031;
+}
+
+main .landing-image {
   width: 100vw;
-  height: 90vh;
-  background-image: url(/IMAGES/landingimg.png);
+  height: 85vh;
+  background-image: url(IMAGES/landingimg.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-attachment: fixed;
+  background-position: bottom;
   background-size: cover;
   position: relative;
-  background-attachment: fixed;
+  z-index: 1;
+  overflow: hidden;
 }
 
-.crowd-image {
-  width: 100vw;
-  height: 50vh;
-  background-image: url(/IMAGES/upper.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-  top: 44%;
-}
-
-.fog-image {
+main .crowd-image {
   width: 100vw;
   height: 100vh;
-  background-image: url(/IMAGES/clouds.png);
+  background-image: url(IMAGES/upper.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  position: absolute;
+  bottom: 10%;
+  z-index: 3;
+  overflow: hidden;
+}
+
+main .fog-image {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/AIKO/IMAGES/clouds.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: absolute;
   top: 0%;
-  opacity: 0.2;
+  opacity: 0.3;
+  z-index: 3;
+  overflow: hidden;
 }
 
-.glitch {
-  font-size: 5.125em;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
+.bio {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.bio p {
+  color: #FB4264;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw #F40A35;
+}
+
+.bio div {
   position: absolute;
-  top: 30%;
-  left: 15%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  margin: 0;
-  color: white;
-  letter-spacing: 5px;
-}
-
-.glitch:before, .glitch:after {
-  display: block;
-  content: attr(data-glitch);
-  text-transform: uppercase;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  opacity: .8;
-}
-
-.glitch:after {
-  color: #72C2BE;
-  z-index: -2;
-}
-
-.glitch:before {
-  color: #9C4031;
-  z-index: -1;
-}
-
-.glitch:hover:before {
-  -webkit-animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 5;
-          animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 5;
-}
-
-.glitch:hover:after {
-  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both 5;
-}
-
-@media only screen and (max-width: 400px) {
-  .glitch {
-    font-size: 3em;
-  }
-}
-
-@-webkit-keyframes glitch {
-  0% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-  20% {
-    -webkit-transform: translate(-5px, 5px);
-            transform: translate(-5px, 5px);
-  }
-  40% {
-    -webkit-transform: translate(-5px, -5px);
-            transform: translate(-5px, -5px);
-  }
-  60% {
-    -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px);
-  }
-  80% {
-    -webkit-transform: translate(5px, -5px);
-            transform: translate(5px, -5px);
-  }
-  to {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-}
-
-@keyframes glitch {
-  0% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-  20% {
-    -webkit-transform: translate(-5px, 5px);
-            transform: translate(-5px, 5px);
-  }
-  40% {
-    -webkit-transform: translate(-5px, -5px);
-            transform: translate(-5px, -5px);
-  }
-  60% {
-    -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px);
-  }
-  80% {
-    -webkit-transform: translate(5px, -5px);
-            transform: translate(5px, -5px);
-  }
-  to {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-}
-
-p {
-  font-size: 2rem;
-  color: red;
+  top: 90%;
+  width: 334px;
+  height: 333px;
+  background-color: red;
 }
 /*# sourceMappingURL=style.css.map */
