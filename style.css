@@ -9,7 +9,8 @@ body {
 }
 
 main nav {
-  font-family: "Nunito", sans-serif;
+  display: none;
+  font-family: "Martel Sans", sans-serif;
   position: absolute;
   z-index: 5;
   top: 50%;
@@ -65,34 +66,84 @@ main .crowd-image {
 main .fog-image {
   width: 100vw;
   height: 100vh;
-  background-image: url(/AIKO/IMAGES/clouds.png);
+  background-image: url(/IMAGES/clouds.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: absolute;
   top: 0%;
-  opacity: 0.25;
-  z-index: 3;
+  opacity: 0.2;
+  z-index: 8;
   overflow: hidden;
 }
 
 .bio {
-  height: 100vh;
+  margin-top: 40vh;
   width: 100vw;
-  position: relative;
+  height: 100vh;
+  background-color: #000;
 }
 
-.bio p {
-  color: #FB4264;
-  line-height: 9vw;
-  text-shadow: 0 0 3vw #F40A35;
+.bio .bio-wrapper {
+  width: 75%;
+  height: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.bio div {
-  position: absolute;
-  top: 90%;
-  width: 334px;
-  height: 333px;
-  background-color: red;
+.bio .bio-wrapper .bio-img-one {
+  min-width: 35%;
+  min-height: 75%;
+  max-width: 35%;
+  max-height: 75%;
+  background-image: url(/IMAGES/bio-img-one.JPG);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: auto;
+  -webkit-transition: margin 1600ms;
+  transition: margin 1600ms;
+}
+
+.bio .bio-wrapper .bio-img-one.push-bottom {
+  margin-bottom: 0;
+  margin-top: auto;
+}
+
+.bio .bio-wrapper .title {
+  color: #fff;
+  text-align: center;
+  width: 2rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+  font-size: 2rem;
+}
+
+.bio .bio-wrapper .title .about {
+  margin-bottom: 2rem;
+}
+
+.bio .bio-wrapper .bio-img-two {
+  min-width: 35%;
+  min-height: 75%;
+  max-width: 35%;
+  max-height: 75%;
+  background-image: url(/IMAGES/bio-img-two.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-top: auto;
+  -webkit-transition: margin 700ms;
+  transition: margin 700ms;
+}
+
+.bio .bio-wrapper .bio-img-two.push-top {
+  margin-top: 0;
+  margin-bottom: auto;
 }
 /*# sourceMappingURL=style.css.map */

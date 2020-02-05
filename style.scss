@@ -1,7 +1,9 @@
 //SASS RULESETS
 $color-red: #9C4031;
 $color-blue: #72C2BE;
-$font-heading: 'Nunito', sans-serif;
+$color-black: #000;
+$color-white: #fff;
+$font-heading: 'Martel Sans', sans-serif;
 
 //START
 * {
@@ -13,8 +15,8 @@ body {
 	width: 100%;
 }
 main {
-
 	nav {
+		display: none; //DISPLAY: NONE;
 		font-family: $font-heading;
 		position: absolute;
 		z-index: 5;
@@ -65,32 +67,72 @@ main {
 	.fog-image {
 		width: 100vw;
 		height: 100vh;
-		background-image: url(/AIKO/IMAGES/clouds.png);
+		background-image: url(/IMAGES/clouds.png);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
 		position: absolute;
 		top: 0%;
-		opacity: 0.25;
-		z-index: 3;
+		opacity: 0.2;
+		z-index: 8;
 		overflow: hidden;
 	}
 }
 //BIO PAGE
 .bio {
-	height: 100vh;
+	margin-top: 40vh;
 	width: 100vw;
-	position: relative;
-	p {
-		color: #FB4264;
-		line-height: 9vw;
-  		text-shadow: 0 0 3vw #F40A35;
-	}
-	div {
-		position: absolute;
-		top: 90%;
-		width: 334px;
-		height: 333px;
-		background-color: red;
+	height: 100vh;
+	background-color: $color-black;
+	.bio-wrapper {
+		width: 75%;
+		height: 90%;
+		margin: 0 auto;
+		overflow: hidden;
+		display: flex;
+		justify-content: space-between;
+		.bio-img-one {
+			min-width: 35%;
+			min-height: 75%;
+			max-width: 35%;
+			max-height: 75%;
+			background-image: url(/IMAGES/bio-img-one.JPG);
+			background-position: center;
+			background-size: cover;
+			margin-bottom: auto; //JS ADD ANIMACI ABY SJELO NA MARGIN-TOP (DOLU)
+			transition: margin 1600ms; //NEFUNGUJE, ZPOMALIT ANIMACI SLITNUTI DOLU
+		}
+		.bio-img-one.push-bottom {
+			margin-bottom: 0;
+			margin-top: auto;
+  		}
+		.title {
+			//single letters need better centering
+			color: $color-white;
+			text-align: center;
+			width: 2rem;
+			margin-top: auto;
+			margin-bottom: auto;
+			margin-top: auto;
+			font-size: 2rem;
+			.about {
+				margin-bottom: 2rem;
+			}
+		}
+		.bio-img-two {
+			min-width: 35%;
+			min-height: 75%;
+			max-width: 35%;
+			max-height: 75%;
+			background-image: url(/IMAGES/bio-img-two.jpg);
+			background-position: center;
+			background-size: cover;
+			margin-top: auto; //JS ADD ANIMACI ABY SJELO NA MARGIN-TOP (DOLU)
+			transition: margin 700ms;
+		}
+		.bio-img-two.push-top {
+			margin-top: 0;
+			margin-bottom: auto;
+  		}
 	}
 }
