@@ -1,3 +1,4 @@
+/* 
 $(".bio-img-one").click(function(){
     $(this).toggleClass("push-bottom");
 });
@@ -5,3 +6,4 @@ $(".bio-img-one").click(function(){
 $(".bio-img-two").click(function(){
     $(this).toggleClass("push-top");
 });
+*/
