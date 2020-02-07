@@ -91,6 +91,18 @@ main {
 		overflow: hidden;
 		display: flex;
 		justify-content: space-between;
+		.text {
+			color: $color-white;
+			writing-mode: vertical-rl;
+    		text-orientation: upright;
+			white-space: nowrap;
+			margin-top: auto;
+			display: none;
+			
+			margin-bottom: auto;
+		}
+		.text-left {
+		}
 		.bio-img-one {
 			min-width: 30%;
 			min-height: 75%;
@@ -103,19 +115,16 @@ main {
 			transition: 1.2s; //NEFUNGUJE, ZPOMALIT ANIMACI SLITNUTI DOLU
 		}
 		.title {
-			//single letters need better centering
 			color: $color-white;
-			text-align: center;
-			width: 2rem;
-			margin-top: auto;
+			writing-mode: vertical-rl;
+    		text-orientation: upright;
+    		white-space: nowrap;
 			margin-bottom: auto;
 			margin-top: auto;
 			font-size: 2rem;
 			font-family: sans-serif;
 			transition: 1.2s;
-			.about {
-				margin-bottom: 2rem;
-			}
+			letter-spacing: 0.3rem;
 		}
 		.bio-img-two {
 			min-width: 30%;

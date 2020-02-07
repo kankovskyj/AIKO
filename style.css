@@ -97,6 +97,18 @@ main .fog-image {
           justify-content: space-between;
 }
 
+.bio .bio-wrapper .text {
+  color: #fff;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: upright;
+  white-space: nowrap;
+  margin-top: auto;
+  display: none;
+  margin-bottom: auto;
+}
+
 .bio .bio-wrapper .bio-img-one {
   min-width: 30%;
   min-height: 75%;
@@ -112,19 +124,18 @@ main .fog-image {
 
 .bio .bio-wrapper .title {
   color: #fff;
-  text-align: center;
-  width: 2rem;
-  margin-top: auto;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: upright;
+  white-space: nowrap;
   margin-bottom: auto;
   margin-top: auto;
   font-size: 2rem;
   font-family: sans-serif;
   -webkit-transition: 1.2s;
   transition: 1.2s;
-}
-
-.bio .bio-wrapper .title .about {
-  margin-bottom: 2rem;
+  letter-spacing: 0.3rem;
 }
 
 .bio .bio-wrapper .bio-img-two {
