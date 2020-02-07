@@ -5,36 +5,7 @@
 
 body {
   background: #010101;
-  width: 100%;
-}
-
-main nav {
-  display: none;
-  font-family: "Martel Sans", sans-serif;
-  position: absolute;
-  z-index: 5;
-  top: 50%;
-  left: 20%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  overflow: hidden;
-}
-
-main nav ul {
-  list-style-type: none;
-}
-
-main nav ul li {
-  width: 100%;
-}
-
-main nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 5rem;
-  text-align: center;
-  letter-spacing: 8px;
-  text-shadow: -2px -2px 0 #72C2BE, 2px 2px 0 #9C4031;
+  overflow-x: hidden;
 }
 
 main .landing-image {
@@ -46,8 +17,9 @@ main .landing-image {
   background-position: bottom;
   background-size: cover;
   position: relative;
-  z-index: 1;
   overflow: hidden;
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
 }
 
 main .crowd-image {
@@ -59,29 +31,75 @@ main .crowd-image {
   background-size: cover;
   position: absolute;
   bottom: 10%;
-  z-index: 3;
+  z-index: 1;
   overflow: hidden;
 }
 
-main .fog-image {
-  width: 100vw;
-  height: 100vh;
-  background-image: url(/IMAGES/clouds.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+main .fog-container {
   position: absolute;
-  top: 0%;
-  opacity: 0.2 !important;
-  z-index: 8;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
+  z-index: 2;
+  opacity: 0.75;
+}
+
+main .fog-container .fog-img {
+  position: absolute;
+  top: 0;
+  bottom: 100%;
+  height: 100vh;
+  width: 300vw;
+  z-index: 6;
+}
+
+main .fog-container .fog-img-first {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000)), url("/IMAGES/fog-1.png");
+  background: linear-gradient(to bottom, transparent, #000), url("/IMAGES/fog-1.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center;
+  -webkit-animation: marquee 130s linear infinite;
+          animation: marquee 130s linear infinite;
+}
+
+main .fog-container .fog-img-second {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black)), url("/IMAGES/fog-2.png");
+  background: linear-gradient(to bottom, transparent, black), url("/IMAGES/fog-2.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center;
+  -webkit-animation: marquee 65s linear infinite;
+          animation: marquee 65s linear infinite;
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-200vw, 0, 0);
+            transform: translate3d(-200vw, 0, 0);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-200vw, 0, 0);
+            transform: translate3d(-200vw, 0, 0);
+  }
 }
 
 .bio {
   margin-top: 40vh;
   width: 100vw;
   height: 100vh;
-  background-color: #000;
+  overflow: hidden;
 }
 
 .bio .bio-wrapper {
@@ -105,7 +123,6 @@ main .fog-image {
   text-orientation: upright;
   white-space: nowrap;
   margin-top: auto;
-  display: none;
   margin-bottom: auto;
 }
 
