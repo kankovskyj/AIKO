@@ -41,7 +41,7 @@ main .fog-container {
   height: 100%;
   overflow: hidden;
   z-index: 2;
-  opacity: 0.75;
+  opacity: 0.85;
 }
 
 main .fog-container .fog-img {
@@ -54,8 +54,8 @@ main .fog-container .fog-img {
 }
 
 main .fog-container .fog-img-first {
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000)), url("/IMAGES/fog-1.png");
-  background: linear-gradient(to bottom, transparent, #000), url("/IMAGES/fog-1.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.4))), url("/IMAGES/fog-1.png");
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)), url("/IMAGES/fog-1.png");
   background-repeat: repeat-x;
   background-size: contain;
   background-position: center;
@@ -100,6 +100,7 @@ main .fog-container .fog-img-second {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  font-family: sans-serif;
 }
 
 .bio .bio-wrapper {
@@ -110,9 +111,9 @@ main .fog-container .fog-img-second {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .bio .bio-wrapper .text {
@@ -122,8 +123,14 @@ main .fog-container .fog-img-second {
           writing-mode: vertical-rl;
   text-orientation: upright;
   white-space: nowrap;
-  margin-top: auto;
+}
+
+.bio .bio-wrapper .text-left {
   margin-bottom: auto;
+}
+
+.bio .bio-wrapper .text-right {
+  margin-top: auto;
 }
 
 .bio .bio-wrapper .bio-img-one {
@@ -149,7 +156,6 @@ main .fog-container .fog-img-second {
   margin-bottom: auto;
   margin-top: auto;
   font-size: 2rem;
-  font-family: sans-serif;
   -webkit-transition: 1.2s;
   transition: 1.2s;
   letter-spacing: 0.3rem;

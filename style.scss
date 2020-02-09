@@ -3,7 +3,9 @@ $color-red: #9C4031;
 $color-blue: #72C2BE;
 $color-black: #000;
 $color-white: #fff;
-$font-heading: 'Martel Sans', sans-serif;
+$font-text: 'Cormorant Garamond', serif;
+
+;
 
 //START
 * {
@@ -45,7 +47,7 @@ main {
   		height: 100%;
   		overflow: hidden;
 		z-index: 2;
-		opacity: 0.75;
+		opacity: 0.85;
 		  .fog-img {
 			position: absolute;
 			top: 0;
@@ -56,7 +58,7 @@ main {
 		}
 		.fog-img-first {
 			background: linear-gradient(
-				to bottom, transparent, $color-black
+				to bottom, transparent, rgba(0, 0, 0, 0.4)
 			  ), url("/IMAGES/fog-1.png");
 			background-repeat: repeat-x;
 			background-size: contain;
@@ -90,22 +92,25 @@ main {
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
+	font-family: sans-serif;
 	.bio-wrapper {
 		width: 75%;
 		height: 90%;
 		margin: 0 auto;
 		overflow: hidden;
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		.text {
 			color: $color-white;
 			writing-mode: vertical-rl;
     		text-orientation: upright;
 			white-space: nowrap;
-			margin-top: auto;
-			margin-bottom: auto;
 		}
 		.text-left {
+			margin-bottom: auto;
+		}
+		.text-right {
+			margin-top: auto;
 		}
 		.bio-img-one {
 			min-width: 30%;
@@ -126,7 +131,6 @@ main {
 			margin-bottom: auto;
 			margin-top: auto;
 			font-size: 2rem;
-			font-family: sans-serif;
 			transition: 1.2s;
 			letter-spacing: 0.3rem;
 		}
