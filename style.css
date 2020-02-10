@@ -54,7 +54,7 @@ main .fog-container .fog-img {
 }
 
 main .fog-container .fog-img-first {
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.4))), url("/IMAGES/fog-1.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.4))), url(IMAGES/fog-1.png);
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)), url(IMAGES/fog-1.png);
   background-repeat: repeat-x;
   background-size: contain;
@@ -64,7 +64,7 @@ main .fog-container .fog-img-first {
 }
 
 main .fog-container .fog-img-second {
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black)), url("/IMAGES/fog-2.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black)), url(IMAGES/fog-2.png);
   background: linear-gradient(to bottom, transparent, black), url(IMAGES/fog-2.png);
   background-repeat: repeat-x;
   background-size: contain;
