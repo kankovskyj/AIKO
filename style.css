@@ -4,8 +4,118 @@
 }
 
 body {
-  background: black;
+  background: #010101;
   overflow-x: hidden;
+}
+
+main {
+  /* ANIMATION */
+}
+
+main .nav-bar {
+  display: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 100vw;
+  height: 100vh;
+  z-index: 8;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+main .nav-bar ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+main .nav-bar ul li {
+  margin: 2rem;
+}
+
+main .nav-bar ul li a {
+  color: #fff;
+  font-size: 3rem;
+  text-decoration: none;
+  font-family: sans-serif;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+main .nav-bar ul li a:hover {
+  color: #72C2BE;
+}
+
+main .menu-btn {
+  position: fixed;
+  top: 5%;
+  right: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  z-index: 9;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+main .menu-btn__burger {
+  width: 4rem;
+  height: 3px;
+  background: #fff;
+  border-radius: 3px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+main .menu-btn__burger::before,
+main .menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  width: 4rem;
+  height: 3px;
+  background: #fff;
+  border-radius: 3px;
+}
+
+main .menu-btn__burger::before {
+  -webkit-transform: translateY(-16px);
+          transform: translateY(-16px);
+}
+
+main .menu-btn__burger::after {
+  -webkit-transform: translateY(16px);
+          transform: translateY(16px);
+}
+
+main .menu-btn.open .menu-btn__burger {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  background: transparent;
+}
+
+main .menu-btn.open .menu-btn__burger::before {
+  -webkit-transform: rotate(45deg) translate(35px, -35px);
+          transform: rotate(45deg) translate(35px, -35px);
+}
+
+main .menu-btn.open .menu-btn__burger::after {
+  -webkit-transform: rotate(-45deg) translate(35px, 35px);
+          transform: rotate(-45deg) translate(35px, 35px);
 }
 
 main .scroll-indie-container {
@@ -73,7 +183,7 @@ main .scroll-indie-container .dissapear {
 main .landing-image {
   width: 100vw;
   height: 85vh;
-  background-image: url(IMAGES/landingimg.png);
+  background-image: url("/IMAGES/landingimg.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: bottom;
@@ -87,7 +197,7 @@ main .landing-image {
 main .crowd-image {
   width: 100vw;
   height: 100vh;
-  background-image: url(IMAGES/upper.png);
+  background-image: url("/IMAGES/upper.png");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -116,8 +226,8 @@ main .fog-container .fog-img {
 }
 
 main .fog-container .fog-img-first {
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.4))), url(IMAGES/fog-1.png);
-  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)), url(IMAGES/fog-1.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.4))), url("/IMAGES/fog-1.png");
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)), url("/IMAGES/fog-1.png");
   background-repeat: repeat-x;
   background-size: contain;
   background-position: center;
@@ -126,8 +236,8 @@ main .fog-container .fog-img-first {
 }
 
 main .fog-container .fog-img-second {
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black)), url(IMAGES/fog-2.png);
-  background: linear-gradient(to bottom, transparent, black), url(IMAGES/fog-2.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000)), url("/IMAGES/fog-2.png");
+  background: linear-gradient(to bottom, transparent, #000), url("/IMAGES/fog-2.png");
   background-repeat: repeat-x;
   background-size: contain;
   background-position: center;
@@ -200,7 +310,7 @@ main .fog-container .fog-img-second {
   min-height: 75%;
   max-width: 30%;
   max-height: 75%;
-  background-image: url(IMAGES/bio-img-one.JPG);
+  background-image: url("/IMAGES/bio-img-one.JPG");
   background-position: center;
   background-size: cover;
   margin-top: auto;
@@ -228,7 +338,7 @@ main .fog-container .fog-img-second {
   min-height: 75%;
   max-width: 30%;
   max-height: 75%;
-  background-image: url(IMAGES/bio-img-two.jpg);
+  background-image: url("/IMAGES/bio-img-two.jpg");
   background-position: center;
   background-size: cover;
   margin-bottom: auto;
