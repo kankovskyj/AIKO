@@ -1,9 +1,8 @@
-/* 
-$(".bio-img-one").click(function(){
-    $(this).toggleClass("push-bottom");
+//FADE THE INDICATOR
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 50) {
+       $('#fade-out').addClass('dissapear');
+    } else {
+       //$('#fade-out').removeClass('dissapear');
+    }
 });
-
-$(".bio-img-two").click(function(){
-    $(this).toggleClass("push-top");
-});
-*/

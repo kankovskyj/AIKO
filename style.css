@@ -8,6 +8,68 @@ body {
   overflow-x: hidden;
 }
 
+main .scroll-indie-container {
+  opacity: 1;
+}
+
+main .scroll-indie-container .scroll-indie {
+  width: 20px;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid #72C2BE;
+  margin: auto;
+  position: absolute;
+  top: 85%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 7;
+  overflow: hidden;
+}
+
+main .scroll-indie-container .scroll-indie .dot {
+  margin: auto;
+  position: absolute;
+  top: 140%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-animation: slide-top 3.5s ease-in-out infinite both;
+          animation: slide-top 3.5s ease-in-out infinite both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-80px);
+    transform: translateY(-80px);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-80px);
+    transform: translateY(-80px);
+  }
+}
+
+main .scroll-indie-container .dissapear {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+}
+
 main .landing-image {
   width: 100vw;
   height: 85vh;
@@ -138,7 +200,7 @@ main .fog-container .fog-img-second {
   min-height: 75%;
   max-width: 30%;
   max-height: 75%;
-  background-image: url(/IMAGES/bio-img-one.JPG);
+  background-image: url(/IMAGES/bio-img-one.jpg);
   background-position: center;
   background-size: cover;
   margin-top: auto;

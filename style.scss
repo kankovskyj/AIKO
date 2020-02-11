@@ -17,6 +17,45 @@ body {
 	overflow-x: hidden;
 }
 main {
+	.scroll-indie-container {
+		opacity: 1;
+		.scroll-indie {
+			width: 20px;
+			height: 30px;
+			border-radius: 10px;
+			border: 2px solid $color-blue;
+			margin: auto;
+			position: absolute;
+			top: 85%; left: 0; bottom: 0; right: 0;
+			z-index: 7;
+			overflow: hidden;
+			.dot {
+				margin: auto;
+				position: absolute;
+				top: 140%; left: 0; bottom: 0; right: 0;
+				width: 10px;
+				height: 10px;
+				background-color: $color-white;
+				border-radius: 50%;
+				animation: slide-top 3.5s ease-in-out infinite both;
+			}
+			@keyframes slide-top {
+				
+				0% {
+				  -webkit-transform: translateY(0);
+						  transform: translateY(0);
+				}
+				100% {
+				  -webkit-transform: translateY(-80px);
+			 			  transform: translateY(-80px);
+				}
+		   }
+		}
+		.dissapear {
+			transition: 0.5s;
+			opacity: 0;
+		}
+	}
 	.landing-image {
 		width: 100vw;
 		height: 85vh;
@@ -117,7 +156,7 @@ main {
 			min-height: 75%;
 			max-width: 30%;
 			max-height: 75%;
-			background-image: url(/IMAGES/bio-img-one.JPG);
+			background-image: url(/IMAGES/bio-img-one.jpg);
 			background-position: center;
 			background-size: cover;
 			margin-top: auto; //JS ADD ANIMACI ABY SJELO NA MARGIN-TOP (DOLU)
