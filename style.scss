@@ -59,7 +59,7 @@ main {
 	.landing-image {
 		width: 100vw;
 		height: 85vh;
-		background-image: url(IMAGES/landingimg.png);
+		background-image: url("/IMAGES/landingimg.png");
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-position: bottom;
@@ -71,7 +71,7 @@ main {
 	.crowd-image {
 		width: 100vw;
 		height: 100vh;
-		background-image: url(IMAGES/upper.png);
+		background-image: url("/IMAGES/upper.png");
 		background-repeat: no-repeat;
 		background-position: bottom;
 		background-size: cover;
@@ -156,7 +156,7 @@ main {
 			min-height: 75%;
 			max-width: 30%;
 			max-height: 75%;
-			background-image: url(/IMAGES/bio-img-one.jpg);
+			background-image: url("/IMAGES/bio-img-one.JPG");
 			background-position: center;
 			background-size: cover;
 			margin-top: auto; //JS ADD ANIMACI ABY SJELO NA MARGIN-TOP (DOLU)
@@ -178,7 +178,7 @@ main {
 			min-height: 75%;
 			max-width: 30%;
 			max-height: 75%;
-			background-image: url(/IMAGES/bio-img-two.jpg);
+			background-image: url("/IMAGES/bio-img-two.jpg");
 			background-position: center;
 			background-size: cover;
 			margin-bottom: auto; //JS ADD ANIMACI ABY SJELO NA MARGIN-TOP (DOLU)
