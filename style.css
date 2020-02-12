@@ -154,7 +154,7 @@ main .scroll-indie-container {
 }
 
 main .scroll-indie-container .scroll-indie {
-  background-image: url(/IMAGES/arrow-neon-glow.png);
+  background-image: url(IMAGES/arrow-neon-glow.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -212,7 +212,7 @@ main .scroll-indie-container .dissapear {
 main .landing-image {
   width: 100vw;
   height: 85vh;
-  background-image: url("/IMAGES/landingimg.png");
+  background-image: url(IMAGES/landingimg.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: bottom;
@@ -226,7 +226,7 @@ main .landing-image {
 main .crowd-image {
   width: 100vw;
   height: 100vh;
-  background-image: url("/IMAGES/upper.png");
+  background-image: url(IMAGES/upper.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -255,8 +255,8 @@ main .fog-container .fog-img {
 }
 
 main .fog-container .fog-img-first {
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.4))), url("/IMAGES/fog-1.png");
-  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)), url("/IMAGES/fog-1.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.4))), url(IMAGES/fog-1.png);
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)), url(IMAGES/fog-1.png);
   background-repeat: repeat-x;
   background-size: contain;
   background-position: center;
@@ -265,8 +265,8 @@ main .fog-container .fog-img-first {
 }
 
 main .fog-container .fog-img-second {
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000)), url("/IMAGES/fog-2.png");
-  background: linear-gradient(to bottom, transparent, #000), url("/IMAGES/fog-2.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000)), url(IMAGES/fog-2.png);
+  background: linear-gradient(to bottom, transparent, #000), url(IMAGES/fog-2.png);
   background-repeat: repeat-x;
   background-size: contain;
   background-position: center;
@@ -339,7 +339,7 @@ main .fog-container .fog-img-second {
   min-height: 75%;
   max-width: 30%;
   max-height: 75%;
-  background-image: url("/IMAGES/bio-img-one.JPG");
+  background-image: url(IMAGES/bio-img-one.JPG);
   background-position: center;
   background-size: cover;
   margin-top: auto;
@@ -367,7 +367,7 @@ main .fog-container .fog-img-second {
   min-height: 75%;
   max-width: 30%;
   max-height: 75%;
-  background-image: url("/IMAGES/bio-img-two.jpg");
+  background-image: url(IMAGES/bio-img-two.jpg);
   background-position: center;
   background-size: cover;
   margin-bottom: auto;

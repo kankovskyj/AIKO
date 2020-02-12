@@ -128,7 +128,7 @@ main {
 	.scroll-indie-container {
 		opacity: 1;
 		.scroll-indie {
-			background-image: url(/IMAGES/arrow-neon-glow.png);
+			background-image: url(IMAGES/arrow-neon-glow.png);
 			background-size: contain;
 			background-position: center;
 			background-repeat: no-repeat;
@@ -162,7 +162,7 @@ main {
 	.landing-image {
 		width: 100vw;
 		height: 85vh;
-		background-image: url("/IMAGES/landingimg.png");
+		background-image: url(IMAGES/landingimg.png);
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-position: bottom;
@@ -174,7 +174,7 @@ main {
 	.crowd-image {
 		width: 100vw;
 		height: 100vh;
-		background-image: url("/IMAGES/upper.png");
+		background-image: url(IMAGES/upper.png);
 		background-repeat: no-repeat;
 		background-position: bottom;
 		background-size: cover;
@@ -201,7 +201,7 @@ main {
 		.fog-img-first {
 			background: linear-gradient(
 				to bottom, transparent, rgba(0, 0, 0, 0.4)
-			  ), url("/IMAGES/fog-1.png");
+			  ), url(IMAGES/fog-1.png);
 			background-repeat: repeat-x;
 			background-size: contain;
 			background-position: center;
@@ -210,7 +210,7 @@ main {
 		.fog-img-second {
 			background: linear-gradient(
 				to bottom, transparent, $color-black
-			  ), url("/IMAGES/fog-2.png");
+			  ), url(IMAGES/fog-2.png);
 			background-repeat: repeat-x;
 			background-size: contain;
 			background-position: center;
@@ -259,7 +259,7 @@ main {
 			min-height: 75%;
 			max-width: 30%;
 			max-height: 75%;
-			background-image: url("/IMAGES/bio-img-one.JPG");
+			background-image: url(IMAGES/bio-img-one.JPG);
 			background-position: center;
 			background-size: cover;
 			margin-top: auto; //JS ADD ANIMACI ABY SJELO NA MARGIN-TOP (DOLU)
@@ -281,7 +281,7 @@ main {
 			min-height: 75%;
 			max-width: 30%;
 			max-height: 75%;
-			background-image: url("/IMAGES/bio-img-two.jpg");
+			background-image: url(IMAGES/bio-img-two.jpg);
 			background-position: center;
 			background-size: cover;
 			margin-bottom: auto; //JS ADD ANIMACI ABY SJELO NA MARGIN-TOP (DOLU)
