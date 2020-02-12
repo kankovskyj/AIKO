@@ -167,6 +167,9 @@ main {
 		background-attachment: fixed;
 		background-position: bottom;
 		background-size: cover;
+		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
 		position: relative;
 		overflow: hidden;
 		filter: brightness(110%);

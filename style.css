@@ -217,6 +217,9 @@ main .landing-image {
   background-attachment: fixed;
   background-position: bottom;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   position: relative;
   overflow: hidden;
   -webkit-filter: brightness(110%);
