@@ -83,7 +83,10 @@ main {
 			height: 4rem;
 			cursor: pointer;
 			z-index: 9;
-			transition: 0.2s;
+			transition: 0.4s;
+		  }
+		  .menu-btn:hover {
+			  opacity: 1;
 		  }
 		  .menu-btn__burger {
 			width: 2.5rem;

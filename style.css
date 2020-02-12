@@ -96,8 +96,12 @@ main .menu-btn {
   height: 4rem;
   cursor: pointer;
   z-index: 9;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+main .menu-btn:hover {
+  opacity: 1;
 }
 
 main .menu-btn__burger {
