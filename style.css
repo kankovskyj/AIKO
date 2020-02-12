@@ -5,6 +5,7 @@
 
 body {
   background: #010101;
+  background: #000;
   overflow-x: hidden;
 }
 
@@ -13,49 +14,76 @@ main {
 }
 
 main .nav-bar {
+  opacity: 0.97;
   display: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  width: 100vw;
+  width: 70vw;
   height: 100vh;
   z-index: 8;
-  background-color: #000;
+  background: white;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(68%, black));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, black 68%);
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
 }
 
 main .nav-bar ul {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 80%;
   margin: auto;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: left;
 }
 
 main .nav-bar ul li {
   margin: 2rem;
+  list-style-type: none;
 }
 
-main .nav-bar ul li a {
+main .nav-bar ul li .nav-li {
   color: #fff;
   font-size: 3rem;
   text-decoration: none;
   font-family: sans-serif;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  letter-spacing: 0.8rem;
+  cursor: pointer;
 }
 
-main .nav-bar ul li a:hover {
+main .nav-bar ul li .nav-li:hover {
   color: #72C2BE;
 }
 
+main .nav-bar ul li .icons {
+  color: #fff;
+  margin-top: 5rem;
+  letter-spacing: 0.8rem;
+}
+
+main .nav-bar ul li .icons .fab {
+  opacity: 0.7;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+main .nav-bar ul li .icons .fab:hover {
+  opacity: 1;
+  font-size: 2rem;
+}
+
 main .menu-btn {
+  opacity: 0.5;
   position: fixed;
   top: 5%;
-  right: 10%;
+  right: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,7 +93,7 @@ main .menu-btn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 4rem;
+  width: 2.5rem;
   height: 4rem;
   cursor: pointer;
   z-index: 9;
@@ -74,7 +102,7 @@ main .menu-btn {
 }
 
 main .menu-btn__burger {
-  width: 4rem;
+  width: 2.5rem;
   height: 3px;
   background: #fff;
   border-radius: 3px;
@@ -86,7 +114,7 @@ main .menu-btn__burger::before,
 main .menu-btn__burger::after {
   content: '';
   position: absolute;
-  width: 4rem;
+  width: 2.5rem;
   height: 3px;
   background: #fff;
   border-radius: 3px;
@@ -123,10 +151,12 @@ main .scroll-indie-container {
 }
 
 main .scroll-indie-container .scroll-indie {
-  width: 20px;
-  height: 30px;
-  border-radius: 10px;
-  border: 2px solid #72C2BE;
+  background-image: url(/IMAGES/arrow-neon-glow.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 45px;
   margin: auto;
   position: absolute;
   top: 85%;
@@ -135,42 +165,38 @@ main .scroll-indie-container .scroll-indie {
   right: 0;
   z-index: 7;
   overflow: hidden;
+  -webkit-animation: bounce 2s steps(70, start) 5s infinite;
+          animation: bounce 2s steps(70, start) 5s infinite;
+  cursor: pointer;
 }
 
-main .scroll-indie-container .scroll-indie .dot {
-  margin: auto;
-  position: absolute;
-  top: 140%;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 10px;
-  height: 10px;
-  background-color: #fff;
-  border-radius: 50%;
-  -webkit-animation: slide-top 3.5s ease-in-out infinite both;
-          animation: slide-top 3.5s ease-in-out infinite both;
-}
-
-@-webkit-keyframes slide-top {
-  0% {
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);
-    transform: translateY(0);
+            transform: translateY(0);
   }
-  100% {
-    -webkit-transform: translateY(-80px);
-    transform: translateY(-80px);
+  40% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
   }
 }
 
-@keyframes slide-top {
-  0% {
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);
-    transform: translateY(0);
+            transform: translateY(0);
   }
-  100% {
-    -webkit-transform: translateY(-80px);
-    transform: translateY(-80px);
+  40% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
   }
 }
 
@@ -330,7 +356,7 @@ main .fog-container .fog-img-second {
   font-size: 2rem;
   -webkit-transition: 1.2s;
   transition: 1.2s;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.5rem;
 }
 
 .bio .bio-wrapper .bio-img-two {

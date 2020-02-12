@@ -21,10 +21,20 @@ $(window).scroll(function(){
     }
 });
 
-//OPEN MENU
-
-
- //
+ //TOGGLE NAVBAR BUTTON
 $('.menu-btn').on('click', function(){
    $('.nav-bar').toggle();
+});
+
+//SCROLL TO BIO
+$(".scroll-indie-container").click(function() {
+  $('html, body').animate({
+      scrollTop: $("#bio").offset().top
+  }, 3000);
+});
+
+$(".nav-bio").click(function() {
+  $('html, body').animate({
+      scrollTop: $("#bio").offset().top
+  }, 1500);
 });

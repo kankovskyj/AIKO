@@ -13,58 +13,80 @@ $font-text: 'Cormorant Garamond', serif;
     padding: 0;
 }
 body {
-	background: #010101;
+	background: $color-black;
 	overflow-x: hidden;
 }
 main {		
 		.nav-bar {
+			opacity: 0.97;
 			display: none;
 			transition: 0.5s;
-			width: 100vw;
+			width: 70vw;
 			height: 100vh;
 			z-index: 8;
-			background-color: $color-black;
+			background: rgb(255,255,255);
+			background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 68%);
 			position: fixed;
 			top: 0;
-			left: 0;
+			right: 0;
 			ul {
 				position: absolute;
 				top: 50%;
-				left: 50%;
+				left: 80%;
 				margin: auto;
 				transform: translate(-50%,-50%);
-				text-align: center;
+				text-align: left;
 				li {
 					margin: 2rem;
-					a {
+					list-style-type: none;
+					.nav-li {
 						color: $color-white;
 						font-size: 3rem;
 						text-decoration: none;
 						font-family: sans-serif;
 						transition: 0.4s;
+						letter-spacing: 0.8rem;
+						cursor: pointer;
 					}
-					a:hover {
+					.nav-li:hover {
 						color: $color-blue;
+					}
+					.icons {
+						color: $color-white;
+						margin-top: 5rem;
+						letter-spacing: 0.8rem;
+						.fab {
+							opacity: 0.7;
+							color: $color-white;
+							transition: 0.4s;
+							font-size: 2rem;
+							cursor: pointer;
+						}
+						.fab:hover {
+							opacity: 1;
+							font-size: 2rem;
+						}
 					}
 				}
 			}
 		}
 		//BUTTON BEGIN
 		.menu-btn {
+			opacity: 0.5;
 			position: fixed;
 			top: 5%;
-			right: 10%;
+			right: 5%;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			width: 4rem;
+			width: 2.5rem;
 			height: 4rem;
 			cursor: pointer;
 			z-index: 9;
 			transition: 0.2s;
 		  }
 		  .menu-btn__burger {
-			width: 4rem;
+			width: 2.5rem;
 			height: 3px;
 			background: $color-white;
 			border-radius: 3px;
@@ -75,7 +97,7 @@ main {
 		  .menu-btn__burger::after {
 			content: '';
 			position: absolute;
-			width: 4rem;
+			width: 2.5rem;
 			height: 3px;
 			background: $color-white;
 			border-radius: 3px;
@@ -99,41 +121,36 @@ main {
 		  }
 		//BUTTON END
 		
-
+//SCROLL INDICATOR FOR des
 	.scroll-indie-container {
 		opacity: 1;
 		.scroll-indie {
-			width: 20px;
-			height: 30px;
-			border-radius: 10px;
-			border: 2px solid $color-blue;
+			background-image: url(/IMAGES/arrow-neon-glow.png);
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+			width: 75px;
+			height: 45px;
 			margin: auto;
 			position: absolute;
 			top: 85%; left: 0; bottom: 0; right: 0;
 			z-index: 7;
 			overflow: hidden;
-			.dot {
-				margin: auto;
-				position: absolute;
-				top: 140%; left: 0; bottom: 0; right: 0;
-				width: 10px;
-				height: 10px;
-				background-color: $color-white;
-				border-radius: 50%;
-				animation: slide-top 3.5s ease-in-out infinite both;
-			}
-			@keyframes slide-top {
-				
-				0% {
-				  -webkit-transform: translateY(0);
-						  transform: translateY(0);
-				}
-				100% {
-				  -webkit-transform: translateY(-80px);
-			 			  transform: translateY(-80px);
-				}
-		   }
+			animation: bounce 2s steps(70, start) 5s infinite;
+			cursor: pointer;
 		}
+		@keyframes bounce {
+			0%, 20%, 50%, 80%, 100% {
+			  transform: translateY(0);
+			}
+			40% {
+			  transform: translateY(-20px);
+			}
+			60% {
+			  transform: translateY(-15px);
+			}
+		  }
+		
 		.dissapear {
 			transition: 0.5s;
 			opacity: 0;
@@ -254,7 +271,7 @@ main {
 			margin-top: auto;
 			font-size: 2rem;
 			transition: 1.2s;
-			letter-spacing: 0.3rem;
+			letter-spacing: 0.5rem;
 		}
 		.bio-img-two {
 			min-width: 30%;

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://kit.fontawesome.com/7c9ee1e517.js" crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,10 +15,18 @@
   <main>
     <nav class="nav-bar">
       <ul>
-        <li class="nav-bio"><a href="">BIO</a></li>
-        <li class="nav-gigs"><a href="">GIGS</a></li>
-        <li class="nav-shop"><a href="">SHOP</a></li>
-        <li class="nav-contact"><a href="">CONTACT</a></li>
+        <li><a class="nav-li nav-bio">BIO</a></li>
+        <li><a class="nav-li nav-gigs">GIGS</a></li>
+        <li><a class="nav-li nav-shop">SHOP</a></li>
+        <li><a class="nav-li nav-contact">CONTACT</a></li>
+        <li style="margin-top: 20rem;"> 
+          <div class="icons">
+            <a class="spotify" href="https://open.spotify.com/artist/4rNUXX8pX47dfwyD6KL2zP"><i class="fab fa-spotify"></i></a>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-facebook"></i>
+          </div>
+        </li>
       </ul>
     </nav>
   
@@ -27,9 +36,7 @@
 
 </div>
     <div class="scroll-indie-container">
-      <div id="fade-out" class="scroll-indie">
-        <p class="dot"></p>
-      </div>
+      <a id="fade-out" class="scroll-indie"></a>
     </div>
     <div class="fog-container">
       <div class="fog-img fog-img-first"></div>
@@ -39,7 +46,7 @@
     <div class="crowd-image" > </div>
   </main> 
   
-  <section class="bio"> 
+  <section id="bio" class="bio"> 
     <div class="bio-wrapper">
       <h2 class="text text-left" data-aos="slide-up">EARLY CAREER</h2>
       <div class="bio-img-one" data-aos="slide-up" data-aos-once="false"></div>
