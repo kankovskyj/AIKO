@@ -209,17 +209,18 @@ main .scroll-indie-container .dissapear {
   opacity: 0;
 }
 
-main .landing-image {
+main .landing-image-container {
+  height: 60vh;
+  overflow: hidden;
+}
+
+main .landing-image-container .landing-image {
   width: 100vw;
-  height: 85vh;
+  height: 100vh;
   background-image: url(IMAGES/landingimg.png);
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: bottom;
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background-position: center;
   position: relative;
   overflow: hidden;
   -webkit-filter: brightness(110%);
@@ -231,18 +232,18 @@ main .crowd-image {
   height: 100vh;
   background-image: url(IMAGES/upper.png);
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
   background-size: cover;
   position: absolute;
-  bottom: 10%;
+  bottom: 27%;
   z-index: 1;
   overflow: hidden;
 }
 
 main .fog-container {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
   z-index: 2;
   opacity: 0.85;
@@ -305,6 +306,7 @@ main .fog-container .fog-img-second {
   height: 100vh;
   overflow: hidden;
   font-family: sans-serif;
+  z-index: 10;
 }
 
 .bio .bio-wrapper {
@@ -318,6 +320,7 @@ main .fog-container .fog-img-second {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  z-index: 11;
 }
 
 .bio .bio-wrapper .text {
@@ -331,10 +334,12 @@ main .fog-container .fog-img-second {
 
 .bio .bio-wrapper .text-left {
   margin-bottom: auto;
+  z-index: 11;
 }
 
 .bio .bio-wrapper .text-right {
   margin-top: auto;
+  z-index: 11;
 }
 
 .bio .bio-wrapper .bio-img-one {
@@ -348,6 +353,7 @@ main .fog-container .fog-img-second {
   margin-top: auto;
   -webkit-transition: 1.2s;
   transition: 1.2s;
+  z-index: 11;
 }
 
 .bio .bio-wrapper .title {
@@ -363,6 +369,7 @@ main .fog-container .fog-img-second {
   -webkit-transition: 1.2s;
   transition: 1.2s;
   letter-spacing: 0.5rem;
+  z-index: 11;
 }
 
 .bio .bio-wrapper .bio-img-two {
@@ -376,5 +383,6 @@ main .fog-container .fog-img-second {
   margin-bottom: auto;
   -webkit-transition: 1.2s;
   transition: 1.2s;
+  z-index: 11;
 }
 /*# sourceMappingURL=style.css.map */

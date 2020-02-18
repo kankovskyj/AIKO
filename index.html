@@ -42,8 +42,17 @@
       <div class="fog-img fog-img-first"></div>
       <div class="fog-img fog-img-second"></div>
     </div>
-    <div class="landing-image"> </div>
-    <div class="crowd-image" > </div>
+
+
+
+
+    <div class="landing-image-container">
+      <div class="landing-image"> </div>
+    </div>
+  
+    <div class="crowd-image lax" data-lax-translate-y="0 1, 400 -260"> </div>
+
+
   </main> 
   
   <section id="bio" class="bio"> 
@@ -61,12 +70,24 @@
   <section></section>
 
 <!-- JS LIBRARIES-->
+<script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
   AOS.init(
 
   );
+
+  window.onload = function() {
+	lax.setup() // init
+
+	const updateLax = () => {
+		lax.update(window.scrollY)
+		window.requestAnimationFrame(updateLax)
+	}
+
+	window.requestAnimationFrame(updateLax)
+};
 </script>
 <script src="scripts.js"></script>
 </body>

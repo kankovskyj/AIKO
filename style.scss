@@ -159,37 +159,38 @@ main {
 			opacity: 0;
 		}
 	}
-	.landing-image {
-		width: 100vw;
-		height: 85vh;
-		background-image: url(IMAGES/landingimg.png);
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-position: bottom;
-		background-size: cover;
-		-webkit-background-size: cover;
-  		-moz-background-size: cover;
-  		-o-background-size: cover;
-		position: relative;
+	.landing-image-container {
+		height: 60vh;
 		overflow: hidden;
-		filter: brightness(110%);
+		.landing-image {
+			width: 100vw;
+			height: 100vh;
+			background-image: url(IMAGES/landingimg.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			position: relative;
+			overflow: hidden;
+			filter: brightness(110%);
+		}
 	}
+
 	.crowd-image {
 		width: 100vw;
 		height: 100vh;
 		background-image: url(IMAGES/upper.png);
 		background-repeat: no-repeat;
-		background-position: bottom;
+		background-position: center;
 		background-size: cover;
 		position: absolute;
-		bottom: 10%;
+		bottom: 27%;
 		z-index: 1;
 		overflow: hidden;
 	}
 	.fog-container {
 		position: absolute;
- 		width: 100%;
-  		height: 100%;
+ 		width: 100vw;
+  		height: 100vh;
   		overflow: hidden;
 		z-index: 2;
 		opacity: 0.85;
@@ -238,6 +239,7 @@ main {
 	height: 100vh;
 	overflow: hidden;
 	font-family: sans-serif;
+	z-index: 10;
 	.bio-wrapper {
 		width: 75%;
 		height: 90%;
@@ -245,6 +247,7 @@ main {
 		overflow: hidden;
 		display: flex;
 		justify-content: space-evenly;
+		z-index: 11;
 		.text {
 			color: $color-white;
 			writing-mode: vertical-rl;
@@ -253,9 +256,13 @@ main {
 		}
 		.text-left {
 			margin-bottom: auto;
+			z-index: 11;
+
 		}
 		.text-right {
 			margin-top: auto;
+			z-index: 11;
+
 		}
 		.bio-img-one {
 			min-width: 30%;
@@ -267,6 +274,7 @@ main {
 			background-size: cover;
 			margin-top: auto; //JS ADD ANIMACI ABY SJELO NA MARGIN-TOP (DOLU)
 			transition: 1.2s; //NEFUNGUJE, ZPOMALIT ANIMACI SLITNUTI DOLU
+			z-index: 11;
 		}
 		.title {
 			color: $color-white;
@@ -278,6 +286,7 @@ main {
 			font-size: 2rem;
 			transition: 1.2s;
 			letter-spacing: 0.5rem;
+			z-index: 11;
 		}
 		.bio-img-two {
 			min-width: 30%;
@@ -289,6 +298,7 @@ main {
 			background-size: cover;
 			margin-bottom: auto; //JS ADD ANIMACI ABY SJELO NA MARGIN-TOP (DOLU)
 			transition: 1.2s;
+			z-index: 11;
 		}
 	}
 }
