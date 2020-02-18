@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,500i,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
   <title>AIKO</title>
 </head>
@@ -42,31 +42,70 @@
       <div class="fog-img fog-img-first"></div>
       <div class="fog-img fog-img-second"></div>
     </div>
-    <div class="landing-image"> </div>
-    <div class="crowd-image" > </div>
-  </main> 
+
+
+
+
+    <div class="landing-image-container">
+      <div class="landing-image"> </div>
+    </div>
   
+    <div class="crowd-image lax" data-lax-translate-y="0 1, 400 -162"> </div>
+
+
+  </main> 
   <section id="bio" class="bio"> 
     <div class="bio-wrapper">
-      <h2 class="text text-left" data-aos="slide-up">EARLY CAREER</h2>
-      <div class="bio-img-one" data-aos="slide-up" data-aos-once="false"></div>
       <div class="title" data-aos="slide-up" data-aos-once="false"> <h1 class="about">ABOUT AIKO</h1></div>
-      <div class="bio-img-two" data-aos="slide-up" data-aos-once="false"></div>
-      <h2 class="text text-right" data-aos="slide-up">BRIGHT FUTURE</h2>
+      <div class="bio-img-one" data-aos="slide-up" data-aos-once="false"></div>
+      <div class="bio-text">
+        <h2 data-aos="slide-up" data-aos-once="false">Dreamy tunes, with an energetic performance and a unique vibe. That is Aiko.</h2>
+        <ul>
+          <li>— 2015 first TV appearance in the popular Czech SUPERSTAR show, semifinalist</li>
+          <li>— 2018 release of her debut EP called AIKO with lyrics about solitude, love and an ambient vibe</li>
+          <li>— 2020 "Bad Influence" single airs on Redbull.com</li>
+        </ul>
+      </div>
     </div>
   </section>
+  <!--
+  <section id="bio" class="bio"> 
+    <div class="action-btn-wrapper">
+      <h1 class="action-btn-title" data-aos="fade-up">Hello stranger</h1>
+      <h1 class="action-btn-title" data-aos="fade-up">I'm Aiko.</h1>
+      <h1 class="action-btn-title" data-aos="fade-up">This is my story</h1>
+      <h1 class="action-btn-title" data-aos="fade-up">But you decide how I'll tell it.</h1>
+      <div class="btns-bio" data-aos="fade-up">
+        <div class="btn-short">I'm in for a ride!</div>
+        <div class="btn-long">To the point</div>
+      </div>
 
+    </div>
+  </section>
+-->
   <section></section>
   <section></section>
   <section></section>
 
 <!-- JS LIBRARIES-->
+<script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
   AOS.init(
 
   );
+
+  window.onload = function() {
+	lax.setup() // init
+
+	const updateLax = () => {
+		lax.update(window.scrollY)
+		window.requestAnimationFrame(updateLax)
+	}
+
+	window.requestAnimationFrame(updateLax)
+};
 </script>
 <script src="scripts.js"></script>
 </body>
