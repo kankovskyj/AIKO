@@ -301,8 +301,7 @@ main .fog-container .fog-img-second {
 }
 
 .about-line-wrapper {
-  top: 105%;
-  margin-bottom: 15vh;
+  top: 125%;
   width: 100%;
   position: absolute;
 }
@@ -318,15 +317,28 @@ main .fog-container .fog-img-second {
 
 .about-line-wrapper .about-line {
   width: 2px;
-  height: 3500px;
+  height: 2620px;
   background: #fff;
   margin-left: auto;
   margin-right: auto;
   opacity: 0.1;
 }
 
+.about-line-wrapper .about-line-progress {
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  width: 2px;
+  height: 0px;
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  background: red;
+  opacity: 0.5;
+}
+
 .bio {
-  margin-top: 70vh;
+  margin-top: 80vh;
 }
 
 .bio .bio-wrapper {
@@ -357,8 +369,11 @@ main .fog-container .fog-img-second {
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
-  width: 50px;
-  height: 50px;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
   background-color: #000;
   border: 2px solid #fff;
   border-radius: 50%;
@@ -396,8 +411,11 @@ main .fog-container .fog-img-second {
   margin-left: auto;
   margin-top: auto;
   margin-bottom: auto;
-  width: 50px;
-  height: 50px;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
   background-color: #000;
   border: 2px solid #fff;
   border-radius: 50%;
@@ -437,8 +455,11 @@ main .fog-container .fog-img-second {
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
-  width: 50px;
-  height: 50px;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
   background-color: #000;
   border: 2px solid #fff;
   border-radius: 50%;
@@ -477,8 +498,11 @@ main .fog-container .fog-img-second {
   margin-left: auto;
   margin-top: auto;
   margin-bottom: auto;
-  width: 50px;
-  height: 50px;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
   background-color: #000;
   border: 2px solid #fff;
   border-radius: 50%;
@@ -492,5 +516,11 @@ main .fog-container .fog-img-second {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.bio .bio-wrapper .progress-icon.fill-icon {
+  background-color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 /*# sourceMappingURL=style.css.map */

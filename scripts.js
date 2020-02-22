@@ -39,3 +39,10 @@ $(".nav-bio").click(function() {
   }, 1500);
 });
 
+$(window).scroll(function(){
+  if ($(this).scrollTop() > 50) {
+     $('progress-icon').addClass('.fill-icon');
+  } else {
+     //$('#fade-out').removeClass('dissapear');
+  }
+});
