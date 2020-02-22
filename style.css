@@ -300,6 +300,31 @@ main .fog-container .fog-img-second {
   }
 }
 
+.about-line-wrapper {
+  top: 105%;
+  margin-bottom: 15vh;
+  width: 100%;
+  position: absolute;
+}
+
+.about-line-wrapper .about-text {
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+}
+
+.about-line-wrapper .about-line {
+  width: 2px;
+  height: 3500px;
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.1;
+}
+
 .bio {
   margin-top: 70vh;
 }
@@ -328,6 +353,18 @@ main .fog-container .fog-img-second {
   color: #fff;
 }
 
+.bio .bio-wrapper .content-one .progress-icon {
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  z-index: 5;
+}
+
 .bio .bio-wrapper .content-one .content-image {
   min-height: 600px;
   min-width: 350px;
@@ -353,6 +390,18 @@ main .fog-container .fog-img-second {
   font-size: 2rem;
   font-family: "Cormorant Garamond", serif;
   color: #fff;
+}
+
+.bio .bio-wrapper .content-two .progress-icon {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  z-index: 5;
 }
 
 .bio .bio-wrapper .content-two .content-image {
@@ -384,6 +433,18 @@ main .fog-container .fog-img-second {
   color: #fff;
 }
 
+.bio .bio-wrapper .content-three .progress-icon {
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  z-index: 5;
+}
+
 .bio .bio-wrapper .content-three .content-image {
   min-height: 600px;
   min-width: 350px;
@@ -412,10 +473,22 @@ main .fog-container .fog-img-second {
   color: #fff;
 }
 
+.bio .bio-wrapper .content-four .progress-icon {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  z-index: 5;
+}
+
 .bio .bio-wrapper .content-four .content-image {
   min-height: 600px;
   min-width: 350px;
-  background-image: url(IMAGES/img-four.jpg);
+  background-image: url(IMAGES/img-four.JPG);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

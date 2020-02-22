@@ -38,3 +38,4 @@ $(".nav-bio").click(function() {
       scrollTop: $("#bio").offset().top
   }, 1500);
 });
+

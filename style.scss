@@ -234,6 +234,30 @@ main {
 	}
 }
 
+.about-line-wrapper {
+	top: 105%;
+	margin-bottom: 15vh;
+	width: 100%;
+	position: absolute;
+	.about-text {
+		color: $color-white;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-family: $font-text;
+		font-size: 2rem;
+	}
+	.about-line {
+		width: 2px;
+		height: 3500px;
+		background: $color-white;
+		margin-left: auto;
+		margin-right: auto;
+		opacity: 0.1;
+	}
+}
+
+
 
 .bio {
 	margin-top: 70vh;
@@ -253,6 +277,17 @@ main {
 				font-size: 2rem;
 				font-family: $font-text;
 				color: $color-white;
+			}
+			.progress-icon {
+				margin-right: auto;
+				margin-top: auto;
+				margin-bottom: auto;
+				width: 50px;
+				height: 50px;
+				background-color: $color-black;
+				border: 2px solid $color-white;
+				border-radius: 50%;
+				z-index: 5;
 			}
 			.content-image {
 				min-height: 600px;
@@ -276,6 +311,17 @@ main {
 				font-family: $font-text;
 				color: $color-white;
 			}
+			.progress-icon {
+				margin-left: auto;
+				margin-top: auto;
+				margin-bottom: auto;
+				width: 50px;
+				height: 50px;
+				background-color: $color-black;
+				border: 2px solid $color-white;
+				border-radius: 50%;
+				z-index: 5;
+			}
 			.content-image {
 				min-height: 600px;
 				min-width: 350px;
@@ -285,6 +331,7 @@ main {
 				background-size: cover;
 				background-repeat: no-repeat;
 			}
+			
 		}
 		.content-three {
 			display: flex;
@@ -298,6 +345,17 @@ main {
 				font-size: 2rem;
 				font-family: $font-text;
 				color: $color-white;
+			}
+			.progress-icon {
+				margin-right: auto;
+				margin-top: auto;
+				margin-bottom: auto;
+				width: 50px;
+				height: 50px;
+				background-color: $color-black;
+				border: 2px solid $color-white;
+				border-radius: 50%;
+				z-index: 5;
 			}
 			.content-image {
 				min-height: 600px;
@@ -322,10 +380,21 @@ main {
 				font-family: $font-text;
 				color: $color-white;
 			}
+			.progress-icon {
+				margin-left: auto;
+				margin-top: auto;
+				margin-bottom: auto;
+				width: 50px;
+				height: 50px;
+				background-color: $color-black;
+				border: 2px solid $color-white;
+				border-radius: 50%;
+				z-index: 5;
+			}
 			.content-image {
 				min-height: 600px;
 				min-width: 350px;
-				background-image: url(IMAGES/img-four.jpg);
+				background-image: url(IMAGES/img-four.JPG);
 				background-position: center;
 				background-size: cover;
 				background-repeat: no-repeat;
