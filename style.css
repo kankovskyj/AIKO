@@ -300,8 +300,45 @@ main .fog-container .fog-img-second {
   }
 }
 
+.about-line-wrapper {
+  top: 125%;
+  width: 100%;
+  position: absolute;
+}
+
+.about-line-wrapper .about-text {
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+}
+
+.about-line-wrapper .about-line {
+  width: 2px;
+  height: 2620px;
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.1;
+}
+
+.about-line-wrapper .about-line-progress {
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  width: 2px;
+  height: 0px;
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  background: red;
+  opacity: 0.5;
+}
+
 .bio {
-  margin-top: 70vh;
+  margin-top: 80vh;
 }
 
 .bio .bio-wrapper {
@@ -326,6 +363,21 @@ main .fog-container .fog-img-second {
   font-size: 2rem;
   font-family: "Cormorant Garamond", serif;
   color: #fff;
+}
+
+.bio .bio-wrapper .content-one .progress-icon {
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  z-index: 5;
 }
 
 .bio .bio-wrapper .content-one .content-image {
@@ -353,6 +405,21 @@ main .fog-container .fog-img-second {
   font-size: 2rem;
   font-family: "Cormorant Garamond", serif;
   color: #fff;
+}
+
+.bio .bio-wrapper .content-two .progress-icon {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  z-index: 5;
 }
 
 .bio .bio-wrapper .content-two .content-image {
@@ -384,6 +451,21 @@ main .fog-container .fog-img-second {
   color: #fff;
 }
 
+.bio .bio-wrapper .content-three .progress-icon {
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  z-index: 5;
+}
+
 .bio .bio-wrapper .content-three .content-image {
   min-height: 600px;
   min-width: 350px;
@@ -412,12 +494,33 @@ main .fog-container .fog-img-second {
   color: #fff;
 }
 
+.bio .bio-wrapper .content-four .progress-icon {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  z-index: 5;
+}
+
 .bio .bio-wrapper .content-four .content-image {
   min-height: 600px;
   min-width: 350px;
-  background-image: url(IMAGES/img-four.jpg);
+  background-image: url(IMAGES/img-four.JPG);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.bio .bio-wrapper .progress-icon.fill-icon {
+  background-color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 /*# sourceMappingURL=style.css.map */

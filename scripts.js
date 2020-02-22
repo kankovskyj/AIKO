@@ -38,3 +38,11 @@ $(".nav-bio").click(function() {
       scrollTop: $("#bio").offset().top
   }, 1500);
 });
+
+$(window).scroll(function(){
+  if ($(this).scrollTop() > 50) {
+     $('progress-icon').addClass('.fill-icon');
+  } else {
+     //$('#fade-out').removeClass('dissapear');
+  }
+});
