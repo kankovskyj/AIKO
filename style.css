@@ -8,147 +8,6 @@ body {
   overflow-x: hidden;
 }
 
-main {
-  /* ANIMATION */
-}
-
-main .nav-bar {
-  opacity: 0.97;
-  display: none;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  width: 70vw;
-  height: 100vh;
-  z-index: 8;
-  background: white;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(black));
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, black 100%);
-  position: fixed;
-  top: 0;
-  right: 0;
-}
-
-main .nav-bar ul {
-  position: absolute;
-  top: 50%;
-  left: 80%;
-  margin: auto;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-align: left;
-}
-
-main .nav-bar ul li {
-  margin: 2rem;
-  list-style-type: none;
-}
-
-main .nav-bar ul li .nav-li {
-  color: #fff;
-  font-size: 3rem;
-  text-decoration: none;
-  font-family: sans-serif;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  letter-spacing: 0.8rem;
-  cursor: pointer;
-}
-
-main .nav-bar ul li .nav-li:hover {
-  color: #72C2BE;
-}
-
-main .nav-bar ul li .icons {
-  color: #fff;
-  margin-top: 5rem;
-  letter-spacing: 0.8rem;
-}
-
-main .nav-bar ul li .icons .fab {
-  opacity: 0.7;
-  color: #fff;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-main .nav-bar ul li .icons .fab:hover {
-  opacity: 1;
-  font-size: 2rem;
-}
-
-main .menu-btn {
-  opacity: 0.5;
-  position: fixed;
-  top: 5%;
-  right: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 2.5rem;
-  height: 4rem;
-  cursor: pointer;
-  z-index: 9;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-main .menu-btn:hover {
-  opacity: 1;
-}
-
-main .menu-btn__burger {
-  width: 2.5rem;
-  height: 3px;
-  background: #fff;
-  border-radius: 3px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-main .menu-btn__burger::before,
-main .menu-btn__burger::after {
-  content: '';
-  position: absolute;
-  width: 2.5rem;
-  height: 3px;
-  background: #fff;
-  border-radius: 3px;
-}
-
-main .menu-btn__burger::before {
-  -webkit-transform: translateY(-16px);
-          transform: translateY(-16px);
-}
-
-main .menu-btn__burger::after {
-  -webkit-transform: translateY(16px);
-          transform: translateY(16px);
-}
-
-main .menu-btn.open .menu-btn__burger {
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
-  background: transparent;
-}
-
-main .menu-btn.open .menu-btn__burger::before {
-  -webkit-transform: rotate(45deg) translate(35px, -35px);
-          transform: rotate(45deg) translate(35px, -35px);
-}
-
-main .menu-btn.open .menu-btn__burger::after {
-  -webkit-transform: rotate(-45deg) translate(35px, 35px);
-          transform: rotate(-45deg) translate(35px, 35px);
-}
-
 main .scroll-indie-container {
   opacity: 1;
 }
@@ -262,7 +121,7 @@ main .fog-container .fog-img-first {
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.4))), url(IMAGES/fog-1.png);
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)), url(IMAGES/fog-1.png);
   background-repeat: repeat-x;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   -webkit-animation: marquee 130s linear infinite;
           animation: marquee 130s linear infinite;
@@ -272,7 +131,7 @@ main .fog-container .fog-img-second {
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000)), url(IMAGES/fog-2.png);
   background: linear-gradient(to bottom, transparent, #000), url(IMAGES/fog-2.png);
   background-repeat: repeat-x;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   -webkit-animation: marquee 65s linear infinite;
           animation: marquee 65s linear infinite;
@@ -311,8 +170,9 @@ main .fog-container .fog-img-second {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 2rem;
+  font-family: "Italiana";
+  font-size: 4rem;
+  letter-spacing: 1.2px;
 }
 
 .about-line-wrapper .about-line {
@@ -324,203 +184,196 @@ main .fog-container .fog-img-second {
   opacity: 0.1;
 }
 
-.about-line-wrapper .about-line-progress {
-  position: absolute;
-  top: 1%;
-  left: 50%;
-  width: 2px;
-  height: 0px;
-  background: #fff;
-  margin-left: auto;
-  margin-right: auto;
-  background: red;
-  opacity: 0.5;
-}
-
-.bio {
+.bio-wrapper {
   margin-top: 80vh;
-}
-
-.bio .bio-wrapper {
-  width: 60vw;
-  height: 100vh;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.bio .bio-wrapper .content-one {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-height: 600px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Italiana";
+  letter-spacing: 1.2px;
 }
 
-.bio .bio-wrapper .content-one .content-text {
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: auto;
-  max-width: 350px;
-  font-size: 2rem;
-  font-family: "Cormorant Garamond", serif;
-  color: #fff;
-}
-
-.bio .bio-wrapper .content-one .progress-icon {
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  color: #fff;
-  line-height: 30px;
-  text-align: center;
-  width: 30px;
-  height: 30px;
-  background-color: #000;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  z-index: 5;
-}
-
-.bio .bio-wrapper .content-one .content-image {
-  min-height: 600px;
-  min-width: 350px;
-  background-image: url(IMAGES/bio-img-one.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.bio .bio-wrapper .content-two {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-height: 600px;
+.bio-wrapper .content-one {
   margin-top: 20vh;
-}
-
-.bio .bio-wrapper .content-two .content-text {
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: auto;
-  max-width: 350px;
-  font-size: 2rem;
-  font-family: "Cormorant Garamond", serif;
-  color: #fff;
-}
-
-.bio .bio-wrapper .content-two .progress-icon {
-  margin-left: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  color: #fff;
-  line-height: 30px;
-  text-align: center;
-  width: 30px;
-  height: 30px;
-  background-color: #000;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  z-index: 5;
-}
-
-.bio .bio-wrapper .content-two .content-image {
-  min-height: 600px;
-  min-width: 350px;
-  background-image: url(IMAGES/bio-img-two.jpg);
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.bio .bio-wrapper .content-three {
+  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-height: 600px;
-  margin-top: 20vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.bio .bio-wrapper .content-three .content-text {
+.bio-wrapper .content-one .content-text {
+  color: #fff;
+  width: 40%;
+  font-size: 1.2rem;
   margin-top: auto;
   margin-bottom: auto;
-  margin-right: auto;
-  max-width: 350px;
-  font-size: 2rem;
-  font-family: "Cormorant Garamond", serif;
-  color: #fff;
 }
 
-.bio .bio-wrapper .content-three .progress-icon {
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  color: #fff;
-  line-height: 30px;
-  text-align: center;
-  width: 30px;
-  height: 30px;
+.bio-wrapper .content-one .progress-icon {
+  width: 1.5rem;
+  height: 1.5rem;
   background-color: #000;
   border: 2px solid #fff;
   border-radius: 50%;
   z-index: 5;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-.bio .bio-wrapper .content-three .content-image {
-  min-height: 600px;
-  min-width: 350px;
-  background-image: url(IMAGES/img-three.JPG);
-  background-position: center;
+.bio-wrapper .content-one .content-image {
+  height: 400px;
+  width: 40%;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-image: url(/IMAGES/bio-img-two.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
-.bio .bio-wrapper .content-four {
+.bio-wrapper .content-two {
+  margin-top: 20vh;
+  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-height: 600px;
-  margin-top: 20vh;
-  margin-bottom: 20vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.bio .bio-wrapper .content-four .content-text {
+.bio-wrapper .content-two .content-text {
+  color: #fff;
+  width: 40%;
+  font-size: 1.2rem;
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: auto;
-  max-width: 350px;
-  font-size: 2rem;
-  font-family: "Cormorant Garamond", serif;
-  color: #fff;
 }
 
-.bio .bio-wrapper .content-four .progress-icon {
-  margin-left: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  color: #fff;
-  line-height: 30px;
-  text-align: center;
-  width: 30px;
-  height: 30px;
+.bio-wrapper .content-two .progress-icon {
+  width: 1.5rem;
+  height: 1.5rem;
   background-color: #000;
   border: 2px solid #fff;
   border-radius: 50%;
   z-index: 5;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-.bio .bio-wrapper .content-four .content-image {
-  min-height: 600px;
-  min-width: 350px;
-  background-image: url(IMAGES/img-four.JPG);
-  background-position: center;
+.bio-wrapper .content-two .content-image {
+  height: 400px;
+  width: 40%;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-image: url(/IMAGES/bio-img-one.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
-.bio .bio-wrapper .progress-icon.fill-icon {
-  background-color: #fff;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+.bio-wrapper .content-three {
+  margin-top: 20vh;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.bio-wrapper .content-three .content-text {
+  color: #fff;
+  width: 40%;
+  font-size: 1.2rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.bio-wrapper .content-three .progress-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #000;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  z-index: 5;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.bio-wrapper .content-three .content-image {
+  height: 400px;
+  width: 40%;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-image: url(/IMAGES/img-three.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bio-wrapper .content-four {
+  margin-top: 20vh;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.bio-wrapper .content-four .content-text {
+  color: #fff;
+  width: 40%;
+  font-size: 1.2rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.bio-wrapper .content-four .progress-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #000;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  z-index: 5;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.bio-wrapper .content-four .content-image {
+  height: 400px;
+  width: 40%;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-image: url(/IMAGES/img-four.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /*# sourceMappingURL=style.css.map */

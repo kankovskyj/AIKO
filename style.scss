@@ -3,7 +3,7 @@ $color-red: #9C4031;
 $color-blue: #72C2BE;
 $color-black: #000;
 $color-white: #fff;
-$font-text: 'Cormorant Garamond', serif;
+$font-text: 'Italiana';
 $easeInOutQuad: cubic-bezier(0.455, 0.030, 0.515, 0.955);
 
 ;
@@ -17,113 +17,7 @@ body {
 	background: $color-black;
 	overflow-x: hidden;
 }
-main {		
-		.nav-bar {
-			opacity: 0.97;
-			display: none;
-			transition: 0.5s;
-			width: 70vw;
-			height: 100vh;
-			z-index: 8;
-			background: rgb(255,255,255);
-			background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
-			position: fixed;
-			top: 0;
-			right: 0;
-			ul {
-				position: absolute;
-				top: 50%;
-				left: 80%;
-				margin: auto;
-				transform: translate(-50%,-50%);
-				text-align: left;
-				li {
-					margin: 2rem;
-					list-style-type: none;
-					.nav-li {
-						color: $color-white;
-						font-size: 3rem;
-						text-decoration: none;
-						font-family: sans-serif;
-						transition: 0.4s;
-						letter-spacing: 0.8rem;
-						cursor: pointer;
-					}
-					.nav-li:hover {
-						color: $color-blue;
-					}
-					.icons {
-						color: $color-white;
-						margin-top: 5rem;
-						letter-spacing: 0.8rem;
-						.fab {
-							opacity: 0.7;
-							color: $color-white;
-							transition: 0.4s;
-							font-size: 2rem;
-							cursor: pointer;
-						}
-						.fab:hover {
-							opacity: 1;
-							font-size: 2rem;
-						}
-					}
-				}
-			}
-		}
-		//BUTTON BEGIN
-		.menu-btn {
-			opacity: 0.5;
-			position: fixed;
-			top: 5%;
-			right: 5%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 2.5rem;
-			height: 4rem;
-			cursor: pointer;
-			z-index: 9;
-			transition: 0.4s;
-		  }
-		  .menu-btn:hover {
-			  opacity: 1;
-		  }
-		  .menu-btn__burger {
-			width: 2.5rem;
-			height: 3px;
-			background: $color-white;
-			border-radius: 3px;
-			transition: 0.2s;
-
-		  }
-		  .menu-btn__burger::before,
-		  .menu-btn__burger::after {
-			content: '';
-			position: absolute;
-			width: 2.5rem;
-			height: 3px;
-			background: $color-white;
-			border-radius: 3px;
-		  }
-		  .menu-btn__burger::before {
-			transform: translateY(-16px);
-		  }
-		  .menu-btn__burger::after {
-			transform: translateY(16px);
-		  }
-		  /* ANIMATION */
-		  .menu-btn.open .menu-btn__burger {
-			transform: translateX(-50px);
-			background: transparent;
-		  }
-		  .menu-btn.open .menu-btn__burger::before {
-			transform: rotate(45deg) translate(35px, -35px);
-		  }
-		  .menu-btn.open .menu-btn__burger::after {
-			transform: rotate(-45deg) translate(35px, 35px);
-		  }
-		//BUTTON END
+main {
 		
 //SCROLL INDICATOR FOR des
 	.scroll-indie-container {
@@ -208,7 +102,7 @@ main {
 				to bottom, transparent, rgba(0, 0, 0, 0.4)
 			  ), url(IMAGES/fog-1.png);
 			background-repeat: repeat-x;
-			background-size: contain;
+			background-size: cover;
 			background-position: center;
 			animation: marquee 130s linear infinite;
 		}
@@ -217,7 +111,7 @@ main {
 				to bottom, transparent, $color-black
 			  ), url(IMAGES/fog-2.png);
 			background-repeat: repeat-x;
-			background-size: contain;
+			background-size: cover;
 			background-position: center;
 			animation: marquee 65s linear infinite;
 		  }
@@ -244,7 +138,8 @@ main {
 		margin-right: auto;
 		text-align: center;
 		font-family: $font-text;
-		font-size: 2rem;
+		font-size: 4rem;
+		letter-spacing: 1.2px;
 	}
 	.about-line {
 		width: 2px;
@@ -254,178 +149,157 @@ main {
 		margin-right: auto;
 		opacity: 0.1;
 	}
-	.about-line-progress {
-		position: absolute;
-		top: 1%;
-		left: 50%;
-		width: 2px;
-		height: 0px;
-		background: $color-white;
-		margin-left: auto;
-		margin-right: auto;
-		background: red;
-		opacity: 0.5;
-	}
 }
-
-
-
-.bio {
+//BIO FOR SMARTPHONE
+.bio-wrapper {
 	margin-top: 80vh;
-	.bio-wrapper {
-		width: 60vw;
-		height: 100vh;
-		margin-left: auto;
-		margin-right: auto;
-		.content-one {
-			display: flex;
-			max-height: 600px;
-			.content-text {
-				margin-top: auto;
-				margin-bottom: auto;
-				margin-right: auto;
-				max-width: 350px;
-				font-size: 2rem;
-				font-family: $font-text;
-				color: $color-white;
-			}
-			.progress-icon {
-				margin-right: auto;
-				margin-top: auto;
-				margin-bottom: auto;
-				color: $color-white;
-				line-height: 30px;
-				text-align: center;
-				width: 30px;
-				height: 30px;
-				background-color: $color-black;
-				border: 2px solid $color-white;
-				border-radius: 50%;
-				z-index: 5;
-			}
-			.content-image {
-				min-height: 600px;
-				min-width: 350px;
-				background-image: url(IMAGES/bio-img-one.jpg);
-				background-position: center;
-				background-size: cover;
-				background-repeat: no-repeat;
-			}
+	display: flex;
+	flex-direction: column;
+	font-family: $font-text;
+	letter-spacing: 1.2px;
+	.content-one {
+		margin-top: 20vh;
+		height: 400px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		.content-text {
+			color: $color-white;
+			width: 40%;
+			font-size: 1.2rem;
+			margin-top: auto;
+			margin-bottom: auto;
 		}
-		.content-two {
-			display: flex;
-			max-height: 600px;
-			margin-top: 20vh;
-			.content-text {
-				margin-top: auto;
-				margin-bottom: auto;
-				margin-left: auto;
-				max-width: 350px;
-				font-size: 2rem;
-				font-family: $font-text;
-				color: $color-white;
-			}
-			.progress-icon {
-				margin-left: auto;
-				margin-top: auto;
-				margin-bottom: auto;
-				color: $color-white;
-				line-height: 30px;
-				text-align: center;
-				width: 30px;
-				height: 30px;
-				background-color: $color-black;
-				border: 2px solid $color-white;
-				border-radius: 50%;
-				z-index: 5;
-			}
-			.content-image {
-				min-height: 600px;
-				min-width: 350px;
-				background-image: url(IMAGES/bio-img-two.jpg);
-				transform: scaleX(-1);
-				background-position: center;
-				background-size: cover;
-				background-repeat: no-repeat;
-			}
-			
+		.progress-icon {
+			width: 1.5rem;
+			height: 1.5rem;
+			background-color: $color-black;
+			border: 2px solid $color-white;
+			border-radius: 50%;
+			z-index: 5;
+			margin-top: auto;
+			margin-bottom: auto;
 		}
-		.content-three {
-			display: flex;
-			max-height: 600px;
-			margin-top: 20vh;
-			.content-text {
-				margin-top: auto;
-				margin-bottom: auto;
-				margin-right: auto;
-				max-width: 350px;
-				font-size: 2rem;
-				font-family: $font-text;
-				color: $color-white;
-			}
-			.progress-icon {
-				margin-right: auto;
-				margin-top: auto;
-				margin-bottom: auto;
-				color: $color-white;
-				line-height: 30px;
-				text-align: center;
-				width: 30px;
-				height: 30px;
-				background-color: $color-black;
-				border: 2px solid $color-white;
-				border-radius: 50%;
-				z-index: 5;
-			}
-			.content-image {
-				min-height: 600px;
-				min-width: 350px;
-				background-image: url(IMAGES/img-three.JPG);
-				background-position: center;
-				background-size: cover;
-				background-repeat: no-repeat;
-			}
+		.content-image {
+			height: 400px;
+			width: 40%;
+			margin-top: auto;
+			margin-bottom: auto;
+			//height: 60%;
+			//background-color: red;
+			background-image: url(/IMAGES/bio-img-two.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
 		}
-		.content-four {
-			display: flex;
-			max-height: 600px;
-			margin-top: 20vh;
-			margin-bottom: 20vh;
-			.content-text {
-				margin-top: auto;
-				margin-bottom: auto;
-				margin-left: auto;
-				max-width: 350px;
-				font-size: 2rem;
-				font-family: $font-text;
-				color: $color-white;
-			}
-			.progress-icon {
-				margin-left: auto;
-				margin-top: auto;
-				margin-bottom: auto;
-				color: $color-white;
-				line-height: 30px;
-				text-align: center;
-				width: 30px;
-				height: 30px;
-				background-color: $color-black;
-				border: 2px solid $color-white;
-				border-radius: 50%;
-				z-index: 5;
-			}
-			.content-image {
-				min-height: 600px;
-				min-width: 350px;
-				background-image: url(IMAGES/img-four.JPG);
-				background-position: center;
-				background-size: cover;
-				background-repeat: no-repeat;
-			}
+	}
+	.content-two {
+		margin-top: 20vh;
+		height: 400px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		.content-text {
+			color: $color-white;
+			width: 40%;
+			font-size: 1.2rem;
+			margin-top: auto;
+			margin-bottom: auto;
 		}
-		.progress-icon.fill-icon {
-			background-color: $color-white;
-			transition: 0.5s;
+		.progress-icon {
+			width: 1.5rem;
+			height: 1.5rem;
+			background-color: $color-black;
+			border: 2px solid $color-white;
+			border-radius: 50%;
+			z-index: 5;
+			margin-top: auto;
+			margin-bottom: auto;
+		}
+		.content-image {
+			height: 400px;
+			width: 40%;
+			margin-top: auto;
+			margin-bottom: auto;
+			//height: 60%;
+			//background-color: red;
+			background-image: url(/IMAGES/bio-img-one.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+	.content-three {
+		margin-top: 20vh;
+		height: 400px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		.content-text {
+			color: $color-white;
+			width: 40%;
+			font-size: 1.2rem;
+			margin-top: auto;
+			margin-bottom: auto;
+		}
+		.progress-icon {
+			width: 1.5rem;
+			height: 1.5rem;
+			background-color: $color-black;
+			border: 2px solid $color-white;
+			border-radius: 50%;
+			z-index: 5;
+			margin-top: auto;
+			margin-bottom: auto;
+		}
+		.content-image {
+			height: 400px;
+			width: 40%;
+			margin-top: auto;
+			margin-bottom: auto;
+			//height: 60%;
+			//background-color: red;
+			background-image: url(/IMAGES/img-three.JPG);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+	.content-four {
+		margin-top: 20vh;
+		height: 400px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		.content-text {
+			color: $color-white;
+			width: 40%;
+			font-size: 1.2rem;
+			margin-top: auto;
+			margin-bottom: auto;
+		}
+		.progress-icon {
+			width: 1.5rem;
+			height: 1.5rem;
+			background-color: $color-black;
+			border: 2px solid $color-white;
+			border-radius: 50%;
+			z-index: 5;
+			margin-top: auto;
+			margin-bottom: auto;
+		}
+		.content-image {
+			height: 400px;
+			width: 40%;
+			margin-top: auto;
+			margin-bottom: auto;
+			//height: 60%;
+			//background-color: red;
+			background-image: url(/IMAGES/img-four.JPG);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
 		}
 	}
 }
+
