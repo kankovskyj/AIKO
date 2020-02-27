@@ -105,7 +105,7 @@ main .fog-container {
   height: 100vh;
   overflow: hidden;
   z-index: 2;
-  opacity: 0.85;
+  opacity: 1;
 }
 
 main .fog-container .fog-img {
@@ -177,7 +177,7 @@ main .fog-container .fog-img-second {
 
 .about-line-wrapper .about-line {
   width: 2px;
-  height: 2620px;
+  height: 1950px;
   background: #fff;
   margin-left: auto;
   margin-right: auto;
@@ -236,7 +236,7 @@ main .fog-container .fog-img-second {
   width: 40%;
   margin-top: auto;
   margin-bottom: auto;
-  background-image: url(/IMAGES/bio-img-two.jpg);
+  background-image: url(IMAGES/bio-img-two.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -281,7 +281,7 @@ main .fog-container .fog-img-second {
   width: 40%;
   margin-top: auto;
   margin-bottom: auto;
-  background-image: url(/IMAGES/bio-img-one.jpg);
+  background-image: url(IMAGES/bio-img-one.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -326,7 +326,7 @@ main .fog-container .fog-img-second {
   width: 40%;
   margin-top: auto;
   margin-bottom: auto;
-  background-image: url(/IMAGES/img-three.JPG);
+  background-image: url(IMAGES/img-three.JPG);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -371,9 +371,105 @@ main .fog-container .fog-img-second {
   width: 40%;
   margin-top: auto;
   margin-bottom: auto;
-  background-image: url(/IMAGES/img-four.JPG);
+  background-image: url(IMAGES/img-four.JPG);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.gigs-line-wrapper {
+  margin-top: 20vh;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "Italiana";
+  font-size: 4rem;
+  letter-spacing: 1.2px;
+}
+
+.gigs-section {
+  margin-top: 10vh;
+  font-family: "Italiana";
+  font-size: 1.1rem;
+  color: #fff;
+  line-height: 2rem;
+}
+
+.gigs-section .gigs-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gigs-section .gigs-row .content-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 1rem;
+  text-align: center;
+}
+
+.gigs-section .gigs-row .content-middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem;
+  text-align: center;
+}
+
+.gigs-section .gigs-row .content-middle .city-country {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.gigs-section .gigs-row .content-middle .place {
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+
+.gigs-section .gigs-row .content-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem;
+  text-align: center;
+}
+
+.gigs-section .gigs-row .content-right a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.gigs-section .gigs-row:nth-of-type(odd) {
+  background-color: #fff;
+  color: #000;
+}
+
+.gigs-section .gigs-row:nth-of-type(odd) a {
+  text-decoration: none;
+  color: #000;
 }
 /*# sourceMappingURL=style.css.map */

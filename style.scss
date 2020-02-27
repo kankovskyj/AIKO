@@ -88,7 +88,7 @@ main {
   		height: 100vh;
   		overflow: hidden;
 		z-index: 2;
-		opacity: 0.85;
+		opacity: 1;
 		  .fog-img {
 			position: absolute;
 			top: 0;
@@ -143,7 +143,7 @@ main {
 	}
 	.about-line {
 		width: 2px;
-		height: 2620px;
+		height: 1950px;
 		background: $color-white;
 		margin-left: auto;
 		margin-right: auto;
@@ -187,7 +187,7 @@ main {
 			margin-bottom: auto;
 			//height: 60%;
 			//background-color: red;
-			background-image: url(/IMAGES/bio-img-two.jpg);
+			background-image: url(IMAGES/bio-img-two.jpg);
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
@@ -223,7 +223,7 @@ main {
 			margin-bottom: auto;
 			//height: 60%;
 			//background-color: red;
-			background-image: url(/IMAGES/bio-img-one.jpg);
+			background-image: url(IMAGES/bio-img-one.jpg);
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
@@ -259,7 +259,7 @@ main {
 			margin-bottom: auto;
 			//height: 60%;
 			//background-color: red;
-			background-image: url(/IMAGES/img-three.JPG);
+			background-image: url(IMAGES/img-three.JPG);
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
@@ -295,7 +295,7 @@ main {
 			margin-bottom: auto;
 			//height: 60%;
 			//background-color: red;
-			background-image: url(/IMAGES/img-four.JPG);
+			background-image: url(IMAGES/img-four.JPG);
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
@@ -303,3 +303,68 @@ main {
 	}
 }
 
+.gigs-line-wrapper {
+	margin-top: 20vh;
+	color: $color-white;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-family: $font-text;
+		font-size: 4rem;
+		letter-spacing: 1.2px;
+}
+
+//FIX FLEXBOX SO THAT GIGS-ROW FITS UNDER EACH OTHER
+
+.gigs-section {
+	margin-top: 10vh;
+	
+	font-family: $font-text;
+	font-size: 1.1rem;
+	color: $color-white;		
+	line-height: 2rem;
+	.gigs-row {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		.content-left {
+			display: flex;
+			flex-direction: row;
+			margin: 1rem;
+			text-align: center;
+		}
+		.content-middle {
+			display: flex;
+			flex-direction: column;
+			margin: 1rem;
+			text-align: center;
+			.city-country {
+				font-size: 1.3rem;
+				font-weight: bold;
+			}
+			.place {
+				font-size: 0.8rem;
+				line-height: 0.8rem;
+			}
+		}
+		.content-right {
+			display: flex;
+			flex-direction: column;
+			margin: 1rem;
+			text-align: center;
+			a {
+				text-decoration: none;
+				color: $color-white;		
+			}
+		}
+	}
+	.gigs-row:nth-of-type(odd) {
+		background-color: $color-white;
+		color: $color-black;
+		a {
+			text-decoration: none;
+			color: $color-black;		
+		}
+	}
+}
