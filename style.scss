@@ -3,10 +3,9 @@ $color-red: #9C4031;
 $color-blue: #72C2BE;
 $color-black: #000;
 $color-white: #fff;
-$font-text: 'Italiana';
+$font-heading: 'Playfair Display';
+$font-text: 'Lora';
 $easeInOutQuad: cubic-bezier(0.455, 0.030, 0.515, 0.955);
-
-;
 
 //START
 * {
@@ -137,7 +136,7 @@ main {
 		margin-left: auto;
 		margin-right: auto;
 		text-align: center;
-		font-family: $font-text;
+		font-family: $font-heading;
 		font-size: 4rem;
 		letter-spacing: 1.2px;
 	}
@@ -303,6 +302,10 @@ main {
 	}
 }
 
+.gigs-text {
+	font-family: $font-heading;
+}
+
 .gigs-line-wrapper {
 	margin-top: 20vh;
 	color: $color-white;
@@ -314,7 +317,6 @@ main {
 		letter-spacing: 1.2px;
 }
 
-//FIX FLEXBOX SO THAT GIGS-ROW FITS UNDER EACH OTHER
 
 .gigs-section {
 	margin-top: 10vh;

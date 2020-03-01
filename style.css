@@ -170,7 +170,7 @@ main .fog-container .fog-img-second {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-family: "Italiana";
+  font-family: "Playfair Display";
   font-size: 4rem;
   letter-spacing: 1.2px;
 }
@@ -193,7 +193,7 @@ main .fog-container .fog-img-second {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: "Italiana";
+  font-family: "Lora";
   letter-spacing: 1.2px;
 }
 
@@ -377,20 +377,24 @@ main .fog-container .fog-img-second {
   background-position: center;
 }
 
+.gigs-text {
+  font-family: "Playfair Display";
+}
+
 .gigs-line-wrapper {
   margin-top: 20vh;
   color: #fff;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-family: "Italiana";
+  font-family: "Lora";
   font-size: 4rem;
   letter-spacing: 1.2px;
 }
 
 .gigs-section {
   margin-top: 10vh;
-  font-family: "Italiana";
+  font-family: "Lora";
   font-size: 1.1rem;
   color: #fff;
   line-height: 2rem;
