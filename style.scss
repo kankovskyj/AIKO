@@ -86,7 +86,7 @@ main {
  		width: 100vw;
   		height: 100vh;
   		overflow: hidden;
-		z-index: 2;
+		z-index: 6;
 		opacity: 1;
 		  .fog-img {
 			position: absolute;
@@ -320,16 +320,19 @@ main {
 
 .gigs-section {
 	margin-top: 10vh;
-	
+	width: 90%;
 	font-family: $font-text;
 	font-size: 1.1rem;
 	color: $color-white;		
 	line-height: 2rem;
+	margin-left: auto;
+	margin-right: auto;
 	.gigs-row {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
+		border-bottom: 1px solid rgba(128, 128, 128, 0.171);
 		.content-left {
 			display: flex;
 			flex-direction: row;
@@ -362,11 +365,23 @@ main {
 		}
 	}
 	.gigs-row:nth-of-type(odd) {
-		background-color: $color-white;
-		color: $color-black;
+		//background-color: rgba(255, 255, 255, 0.178);
+		color: $color-white;
 		a {
 			text-decoration: none;
-			color: $color-black;		
+			color: $color-white;		
 		}
 	}
 }
+
+//RESPONSIVE
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 320px) and (max-width: 480px) {
+  
+	html {
+		font-size: 12px;
+	}
+	
+  }
+	

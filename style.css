@@ -104,7 +104,7 @@ main .fog-container {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  z-index: 2;
+  z-index: 6;
   opacity: 1;
 }
 
@@ -394,10 +394,13 @@ main .fog-container .fog-img-second {
 
 .gigs-section {
   margin-top: 10vh;
+  width: 90%;
   font-family: "Lora";
   font-size: 1.1rem;
   color: #fff;
   line-height: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .gigs-section .gigs-row {
@@ -414,6 +417,7 @@ main .fog-container .fog-img-second {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.171);
 }
 
 .gigs-section .gigs-row .content-left {
@@ -468,12 +472,17 @@ main .fog-container .fog-img-second {
 }
 
 .gigs-section .gigs-row:nth-of-type(odd) {
-  background-color: #fff;
-  color: #000;
+  color: #fff;
 }
 
 .gigs-section .gigs-row:nth-of-type(odd) a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
