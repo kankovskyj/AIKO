@@ -383,9 +383,9 @@ main {
 		font-size: 12px;
 	}
 	.gigs-section {
-		width: 90%;
+		width: 99%;
 	}
-	.landing-image-container {
+	.main .landing-image-container { //doesnt work, why?
 		height: 80vh;
 	}
 	.crowd-image {
