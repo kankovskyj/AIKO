@@ -394,7 +394,7 @@ main .fog-container .fog-img-second {
 
 .gigs-section {
   margin-top: 10vh;
-  width: 90%;
+  width: 70%;
   font-family: "Lora";
   font-size: 1.1rem;
   color: #fff;
@@ -483,6 +483,15 @@ main .fog-container .fog-img-second {
 @media (min-width: 320px) and (max-width: 480px) {
   html {
     font-size: 12px;
+  }
+  .gigs-section {
+    width: 90%;
+  }
+  .landing-image-container {
+    height: 80vh;
+  }
+  .crowd-image {
+    bottom: 9%;
   }
 }
 /*# sourceMappingURL=style.css.map */
