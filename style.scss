@@ -17,6 +17,72 @@ body {
 	overflow-x: hidden;
 }
 main {
+	/*
+	.nav-wrapper {
+		opacity: 0.5;
+		text-align: center;
+		height: 100vh;
+		width: 100vw;
+		position: absolute;;
+		z-index: 9;
+		display: flex;
+		flex-direction: column;
+		a {
+			text-decoration: none;
+			font-family: $font-heading;
+			font-size: 24px;
+			font-weight: 700;
+		}
+		.items-top {
+			display: flex;
+			justify-content: space-between;
+			margin: 1.5rem;
+			align-items: center;
+			.nav-icon-left {
+				color: $color-white;
+				font-size: 4rem;
+				font-family: $font-heading;
+			}
+			.menu-right {
+				a {
+					margin-left: 1rem;
+					color: $color-white;
+				}
+			}
+
+		}
+		.items-bottom {
+			margin-top: auto;
+			margin-bottom: 1.5rem;
+			margin-left: 1.5rem;
+			margin-right: 1.5rem;
+			color: red;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			.arrow-down {
+				font-size: 4rem;
+				color: $color-white;
+				text-align: right;
+			}
+			.music-videos {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				margin-left: 73vw;
+				.vid {
+					width: 150px;
+					height: 150px;
+					background: white;
+					margin-right: 1rem;
+				}
+				.video-one {
+					width: 200px;
+					height: 200px;
+				}
+			}
+		}
+	}*/
 		
 //SCROLL INDICATOR FOR des
 	.scroll-indie-container {
