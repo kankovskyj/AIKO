@@ -88,7 +88,7 @@ main {
 	.scroll-indie-container {
 		opacity: 1;
 		.scroll-indie {
-			background-image: url(images/arrow-neon-glow.png);
+			background-image: url(images/arrow.png);
 			background-size: contain;
 			background-position: center;
 			background-repeat: no-repeat;
@@ -165,7 +165,7 @@ main {
 		.fog-img-first {
 			background: linear-gradient(
 				to bottom, transparent, rgba(0, 0, 0, 0.4)
-			  ), url(images/fog-1.png);
+			  ), url(images/fogone.png);
 			background-repeat: repeat-x;
 			background-size: cover;
 			background-position: center;
@@ -174,7 +174,7 @@ main {
 		.fog-img-second {
 			background: linear-gradient(
 				to bottom, transparent, $color-black
-			  ), url(images/fog-2.png);
+			  ), url(images/fogtwo.png);
 			background-repeat: repeat-x;
 			background-size: cover;
 			background-position: center;
@@ -208,7 +208,7 @@ main {
 	}
 	.about-line {
 		width: 2px;
-		height: 1950px;
+		height: 300vh;
 		background: $color-white;
 		margin-left: auto;
 		margin-right: auto;
@@ -399,6 +399,7 @@ main {
 		align-items: center;
 		justify-content: space-between;
 		border-bottom: 1px solid rgba(128, 128, 128, 0.171);
+		perspective: 150px;
 		.content-left {
 			display: flex;
 			flex-direction: row;
@@ -424,21 +425,58 @@ main {
 			flex-direction: column;
 			margin: 1rem;
 			text-align: center;
+			color: white;
 			a {
 				text-decoration: none;
-				color: $color-white;		
+				color: white;
 			}
 		}
 	}
-	.gigs-row:nth-of-type(odd) {
-		//background-color: rgba(255, 255, 255, 0.178);
-		color: $color-white;
-		a {
-			text-decoration: none;
-			color: $color-white;		
+}
+
+.shop-section {
+	margin-top: 20vh;
+	overflow: hidden;
+	.cd-img {
+		margin-left: auto;
+		margin-right: auto;
+		width: 22rem;
+		height: 22rem;
+		background-color: $color-red;
+		background-image: url(images/album.jpg);
+		background-size: cover;
+		background-position: top;
+	}
+	.text-price {
+		margin-top: 5px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 22rem;
+		margin-left: auto;
+		margin-right: auto;
+		color: white;
+		h1 {
+			font-family: $font-text;
+			font-size: 1rem;
+		}
+		h2 {
+			font-family: $font-heading;
+			display: flex;
+			align-items: baseline;
+			p {
+			font-family: $font-text;
+			}
 		}
 	}
 }
+
+
+
+
+
+
+
 
 //RESPONSIVE
 

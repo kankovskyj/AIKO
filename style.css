@@ -82,7 +82,7 @@ main .scroll-indie-container {
 }
 
 main .scroll-indie-container .scroll-indie {
-  background-image: url(images/arrow-neon-glow.png);
+  background-image: url(images/arrow.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -187,8 +187,8 @@ main .fog-container .fog-img {
 }
 
 main .fog-container .fog-img-first {
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.4))), url(images/fog-1.png);
-  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)), url(images/fog-1.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.4))), url(images/fogone.png);
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)), url(images/fogone.png);
   background-repeat: repeat-x;
   background-size: cover;
   background-position: center;
@@ -197,8 +197,8 @@ main .fog-container .fog-img-first {
 }
 
 main .fog-container .fog-img-second {
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000)), url(images/fog-2.png);
-  background: linear-gradient(to bottom, transparent, #000), url(images/fog-2.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000)), url(images/fogtwo.png);
+  background: linear-gradient(to bottom, transparent, #000), url(images/fogtwo.png);
   background-repeat: repeat-x;
   background-size: cover;
   background-position: center;
@@ -246,7 +246,7 @@ main .fog-container .fog-img-second {
 
 .about-line-wrapper .about-line {
   width: 2px;
-  height: 1950px;
+  height: 300vh;
   background: #fff;
   margin-left: auto;
   margin-right: auto;
@@ -487,6 +487,8 @@ main .fog-container .fog-img-second {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-bottom: 1px solid rgba(128, 128, 128, 0.171);
+  -webkit-perspective: 150px;
+          perspective: 150px;
 }
 
 .gigs-section .gigs-row .content-left {
@@ -533,20 +535,64 @@ main .fog-container .fog-img-second {
           flex-direction: column;
   margin: 1rem;
   text-align: center;
+  color: white;
 }
 
 .gigs-section .gigs-row .content-right a {
   text-decoration: none;
-  color: #fff;
+  color: white;
 }
 
-.gigs-section .gigs-row:nth-of-type(odd) {
-  color: #fff;
+.shop-section {
+  margin-top: 20vh;
+  overflow: hidden;
 }
 
-.gigs-section .gigs-row:nth-of-type(odd) a {
-  text-decoration: none;
-  color: #fff;
+.shop-section .cd-img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 22rem;
+  height: 22rem;
+  background-color: #9C4031;
+  background-image: url(images/album.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.shop-section .text-price {
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 22rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.shop-section .text-price h1 {
+  font-family: "Lora";
+  font-size: 1rem;
+}
+
+.shop-section .text-price h2 {
+  font-family: "Playfair Display";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.shop-section .text-price h2 p {
+  font-family: "Lora";
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
