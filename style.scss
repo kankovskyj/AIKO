@@ -88,7 +88,7 @@ main {
 	.scroll-indie-container {
 		opacity: 1;
 		.scroll-indie {
-			background-image: url(IMAGES/arrow-neon-glow.png);
+			background-image: url(images/arrow-neon-glow.png);
 			background-size: contain;
 			background-position: center;
 			background-repeat: no-repeat;
@@ -125,7 +125,7 @@ main {
 		.landing-image {
 			width: 100vw;
 			height: 100vh;
-			background-image: url(IMAGES/landingimg.png);
+			background-image: url(images/landingimg.png);
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center;
@@ -138,7 +138,7 @@ main {
 	.crowd-image {
 		width: 100vw;
 		height: 100vh;
-		background-image: url(IMAGES/upper.png);
+		background-image: url(images/upper.png);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -165,7 +165,7 @@ main {
 		.fog-img-first {
 			background: linear-gradient(
 				to bottom, transparent, rgba(0, 0, 0, 0.4)
-			  ), url(IMAGES/fog-1.png);
+			  ), url(images/fog-1.png);
 			background-repeat: repeat-x;
 			background-size: cover;
 			background-position: center;
@@ -174,7 +174,7 @@ main {
 		.fog-img-second {
 			background: linear-gradient(
 				to bottom, transparent, $color-black
-			  ), url(IMAGES/fog-2.png);
+			  ), url(images/fog-2.png);
 			background-repeat: repeat-x;
 			background-size: cover;
 			background-position: center;
@@ -252,7 +252,7 @@ main {
 			margin-bottom: auto;
 			//height: 60%;
 			//background-color: red;
-			background-image: url(IMAGES/bio-img-two.jpg);
+			background-image: url(images/two.jpg);
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
@@ -288,7 +288,7 @@ main {
 			margin-bottom: auto;
 			//height: 60%;
 			//background-color: red;
-			background-image: url(IMAGES/bio-img-one.jpg);
+			background-image: url(images/one.jpg);
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
@@ -324,10 +324,10 @@ main {
 			margin-bottom: auto;
 			//height: 60%;
 			//background-color: red;
-			background-image: url(IMAGES/img-three.jpg);
+			background-image: url(images/three.jpg);
 			background-size: cover;
 			background-repeat: no-repeat;
-			background-position: center;
+			background-position: top;
 		}
 	}
 	.content-four {
@@ -360,7 +360,7 @@ main {
 			margin-bottom: auto;
 			//height: 60%;
 			//background-color: red;
-			background-image: url(IMAGES/img-four.JPG);
+			background-image: url(images/four.jpg);
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
