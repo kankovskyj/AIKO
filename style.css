@@ -246,7 +246,7 @@ main .fog-container .fog-img-second {
 
 .about-line-wrapper .about-line {
   width: 2px;
-  height: 300vh;
+  height: 340vh;
   background: #fff;
   margin-left: auto;
   margin-right: auto;
@@ -451,7 +451,7 @@ main .fog-container .fog-img-second {
 }
 
 .gigs-line-wrapper {
-  margin-top: 20vh;
+  margin-top: 40vh;
   color: #fff;
   margin-left: auto;
   margin-right: auto;
@@ -607,7 +607,7 @@ main .fog-container .fog-img-second {
     height: 80vh;
   }
   .crowd-image {
-    bottom: 9%;
+    bottom: 0%;
   }
 }
 /*# sourceMappingURL=style.css.map */
