@@ -208,7 +208,7 @@ main {
 	}
 	.about-line {
 		width: 2px;
-		height: 340vh;
+		height: 300vh;
 		background: $color-white;
 		margin-left: auto;
 		margin-right: auto;
@@ -493,8 +493,10 @@ main {
 	.main .landing-image-container { //doesnt work, why?
 		height: 80vh;
 	}
-	.crowd-image {
-		bottom: 0%;
+	.main .crowd-image .lax {
+	}
+	.about-line-wrapper .about-line {
+		height: 350vh;
 	}
 	
   }
