@@ -157,7 +157,7 @@ main .landing-image-container .landing-image {
 
 main .crowd-image {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   background-image: url(images/upper.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -689,8 +689,8 @@ main .fog-container .fog-img-second {
   .gigs-section {
     width: 99%;
   }
-  .main .landing-image-container {
-    height: 80vh;
+  .crowd-image {
+    height: 10vh;
   }
   .about-line-wrapper .about-line {
     height: 350vh;
