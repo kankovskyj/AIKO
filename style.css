@@ -689,6 +689,9 @@ main .fog-container .fog-img-second {
   .gigs-section {
     width: 99%;
   }
+  .landing-image-container .landing-image {
+    height: 20vh;
+  }
   .crowd-image {
     height: 10vh;
   }
