@@ -1,4 +1,7 @@
-
+$('#toggle').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay').toggleClass('open');
+  });
 //FADE THE INDICATOR
 $(window).scroll(function(){
     if ($(this).scrollTop() > 50) {
