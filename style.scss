@@ -77,6 +77,7 @@ body {
       margin-right: auto;
       margin-top: auto;
       margin-bottom: auto;
+      line-height: 2.8rem;
     }
   }
   .box:nth-of-type(odd) {
@@ -153,6 +154,55 @@ body {
   }
 }
 
+.shop-page {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  .buy-hover {
+    transition: 0.25s;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    color: $color-white;
+    font-family: $font-text;
+    display: flex;
+    flex-direction: column;
+    .album-cover {
+      width: 400px;
+      height: 400px;
+      background-image: url(images/album.png);
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+    }
+    .pricing {
+      width: 400px;
+      margin-top: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.5rem;
+    }
+    .order-button {
+      text-decoration: none;
+      color: $color-white;
+      font-size: 1.6rem;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 15px 25px;
+      border: 2px solid $color-white;
+      margin-top: 2rem;
+      transition: 0.25s ease;
+    }
+    .order-button:hover {
+      color: $color-black;
+      background-color: $color-white;
+    }
+  }
+}
 //RESPONSIVE
 @media (min-width: 320px) and (max-width: 480px) {
   .landing-page {
@@ -200,6 +250,7 @@ body {
         margin-right: auto;
         margin-top: 0;
         margin-bottom: 0;
+        line-height: 2rem;
       }
     }
     .box:nth-of-type(odd) {
@@ -259,4 +310,38 @@ body {
     }
   }
 
+  .shop-page {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    .buy-hover {
+      width: 280px;
+      margin-left: auto;
+      margin-right: auto;
+      color: $color-white;
+      font-family: $font-text;
+      display: flex;
+      flex-direction: column;
+      .album-cover {
+        width: 280px;
+        height: 280px;
+        background-image: url(images/album.png);
+        background-size: cover;
+        background-position: center;
+      }
+      .pricing {
+        width: 280px;
+        margin-top: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1rem;
+      }
+      .order-button {
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
 }

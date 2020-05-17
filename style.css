@@ -85,6 +85,7 @@ body {
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
+  line-height: 2.8rem;
 }
 
 .bio-page .box:nth-of-type(odd) img {
@@ -192,6 +193,77 @@ body {
   border-bottom: 1px solid #eeeeee2c;
 }
 
+.shop-page {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.shop-page .buy-hover {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  font-family: "Lora";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.shop-page .buy-hover .album-cover {
+  width: 400px;
+  height: 400px;
+  background-image: url(images/album.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.shop-page .buy-hover .pricing {
+  width: 400px;
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+.shop-page .buy-hover .order-button {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 25px;
+  border: 2px solid #fff;
+  margin-top: 2rem;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+}
+
+.shop-page .buy-hover .order-button:hover {
+  color: #000;
+  background-color: #fff;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   .landing-page {
     background-position: center top;
@@ -248,6 +320,7 @@ body {
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
+    line-height: 2rem;
   }
   .bio-page .box:nth-of-type(odd) img {
     -webkit-box-ordinal-group: 2;
@@ -312,6 +385,49 @@ body {
   }
   .gigs-page .gigs-row .content-middle span:nth-of-type(2) {
     font-size: 0.6rem;
+  }
+  .shop-page {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+  }
+  .shop-page .buy-hover {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    font-family: "Lora";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .shop-page .buy-hover .album-cover {
+    width: 280px;
+    height: 280px;
+    background-image: url(images/album.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .shop-page .buy-hover .pricing {
+    width: 280px;
+    margin-top: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 1rem;
+  }
+  .shop-page .buy-hover .order-button {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
