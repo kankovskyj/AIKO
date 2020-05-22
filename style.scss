@@ -204,14 +204,103 @@ body {
     }
   }
 }
+
+.contact-page {
+  margin-top: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #01010A;
+img {
+  width: 40%;
+}
+.container {
+	max-width: 45%;
+	width: 45%;
+	margin: 0;
+  position: relative;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { 
+  font-family: $font-heading; background: #021B3C;
+}
+
+#contact {
+	background: none;
+	padding: 1.5rem;
+}
+
+#contact h1 {
+	color: $color-white;
+  font-family: $font-heading;
+  text-transform: uppercase;
+	font-size: 4.5rem;
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+
+fieldset {
+	border: none;
+	margin: 0 0 0.5rem;
+	min-width: 100%;
+	padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width: 100%;
+	background: #1B1322;
+	margin: 0 0 5px;
+  padding: 10px;
+  border: none;
+  color: $color-white;
+  font-size: 1rem;
+}
+
+#contact textarea {
+	height: 200px;
+	max-width:100%;
+  resize:none;
+  color: $color-white;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:50%;
+	border: none;
+	color: $color-white;
+	padding: 15px;
+	font-size: 1rem;
+}
+
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+}
+::-webkit-input-placeholder {
+ color:#888;
+ font-size: 1rem;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+}
 //RESPONSIVE
 @media (min-width: 320px) and (max-width: 480px) {
   .landing-page {
     background-position: center top;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: initial;
     .crowd-image {
-      background-position: 15% 90%;
-      background-size: cover;
+      display: none;
     }
   }
 
@@ -344,4 +433,27 @@ body {
       }
     }
   }
+
+  .contact-page {
+    margin-top: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #01010A;
+  img {
+    display: none;
+  }
+  .container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    #contact {
+      overflow: hidden;
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
 }
