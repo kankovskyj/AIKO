@@ -5,139 +5,41 @@
 
 body {
   width: 100%;
-  background: #000;
-  overflow-x: hidden;
+  background: #FAF9F5;
+  font-family: "Lora";
 }
 
 .landing-page {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  background-image: url(images/landingimg.png);
-  background-position: center;
-  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.landing-page .landing-img {
+  width: 100vw;
+  height: 85vh;
+  background-image: url("/images/landing.jpg");
+  background-size: contain;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-position-x: center;
 }
 
-.landing-page .header {
-  position: absolute;
-  z-index: 10;
-}
-
-.landing-page .header .navbar {
-  position: fixed;
-  top: 3rem;
-  right: 2rem;
-  width: 3.5rem;
-  height: 0.5rem;
-  border-top: 3px solid #fff;
-  border-bottom: 3px solid #fff;
-}
-
-.landing-page .crowd-image {
-  width: 100%;
-  height: 100vh;
-  background-image: url(images/upper.png);
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.bio-page {
-  width: 80%;
+.landing-page #exp-date {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20vh;
-  overflow: hidden;
-}
-
-.bio-page h1 {
-  color: #fff;
-  font-family: "Playfair Display";
-  font-size: 9.5rem;
-  font-weight: normal;
-}
-
-.bio-page .box {
-  margin-top: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.bio-page .box img {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-  max-width: 500px;
-  max-height: 700px;
-  z-index: 5;
-}
-
-.bio-page .box p {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-  width: 50%;
-  color: #fff;
-  font-family: "Lora";
-  font-size: 1.7rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  line-height: 2.8rem;
-}
-
-.bio-page .box:nth-of-type(odd) img {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
-
-.bio-page .box:nth-of-type(odd) p {
-  margin-left: auto;
-  margin-right: auto;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-}
-
-.vids-page {
-  margin-top: 20vh;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.vids-page .vids-wrapper {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.vids-page .vids-wrapper iframe {
-  width: 400px;
-  height: 400px;
-}
-
-.vids-page .vids-wrapper iframe:nth-of-type(odd) {
-  width: 300px;
-  height: 300px;
+  font-size: 4rem;
+  color: #EB8801;
+  letter-spacing: 1rem;
 }
 
 .gigs-page {
-  width: 80%;
+  width: 70vw;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20vh;
@@ -150,7 +52,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #fff;
+  color: #EB8801;
   font-family: "Lora";
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -160,8 +62,7 @@ body {
           align-items: center;
   font-size: 1.3rem;
   text-align: center;
-  border-top: 1px solid #8080802c;
-  border-bottom: 1px solid #8080802c;
+  border-top: 1px solid #eb8a012d;
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
@@ -186,372 +87,10 @@ body {
 
 .gigs-page .gigs-row a {
   text-decoration: none;
-  color: #fff;
+  color: #EB8801;
 }
 
-.gigs-page .gigs-row:hover {
-  border-top: 1px solid #eeeeee2c;
-  border-bottom: 1px solid #eeeeee2c;
-}
-
-.shop-page {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20vh;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.shop-page .buy-hover {
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-  width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  color: #fff;
-  font-family: "Lora";
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.shop-page .buy-hover .album-cover {
-  width: 400px;
-  height: 400px;
-  background-image: url(images/album.png);
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-}
-
-.shop-page .buy-hover .pricing {
-  width: 400px;
-  margin-top: 0.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-size: 1.5rem;
-}
-
-.shop-page .buy-hover .order-button {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.6rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 15px 25px;
-  border: 2px solid #fff;
-  margin-top: 2rem;
-  -webkit-transition: 0.25s ease;
-  transition: 0.25s ease;
-}
-
-.shop-page .buy-hover .order-button:hover {
-  color: #000;
-  background-color: #fff;
-}
-
-.contact-page {
-  margin-top: 10vh;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #01010A;
-}
-
-.contact-page img {
-  width: 40%;
-}
-
-.contact-page .container {
-  max-width: 45%;
-  width: 45%;
-  margin: 0;
-  position: relative;
-}
-
-.contact-page #contact input[type="text"], .contact-page #contact input[type="email"], .contact-page #contact input[type="tel"], .contact-page #contact input[type="url"], .contact-page #contact textarea, .contact-page #contact button[type="submit"] {
-  font-family: "Playfair Display";
-  background: #021B3C;
-}
-
-.contact-page #contact {
-  background: none;
-  padding: 1.5rem;
-}
-
-.contact-page #contact h1 {
-  color: #fff;
-  font-family: "Playfair Display";
-  text-transform: uppercase;
-  font-size: 4.5rem;
-  font-weight: normal;
-  margin-bottom: 2rem;
-}
-
-.contact-page fieldset {
-  border: none;
-  margin: 0 0 0.5rem;
-  min-width: 100%;
-  padding: 0;
-  width: 100%;
-}
-
-.contact-page #contact input[type="text"], .contact-page #contact input[type="email"], .contact-page #contact input[type="tel"], .contact-page #contact input[type="url"], .contact-page #contact textarea {
-  width: 100%;
-  background: #1B1322;
-  margin: 0 0 5px;
-  padding: 10px;
-  border: none;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.contact-page #contact textarea {
-  height: 200px;
-  max-width: 100%;
-  resize: none;
-  color: #fff;
-}
-
-.contact-page #contact button[type="submit"] {
-  cursor: pointer;
-  width: 50%;
-  border: none;
-  color: #fff;
-  padding: 15px;
-  font-size: 1rem;
-}
-
-.contact-page #contact input:focus, .contact-page #contact textarea:focus {
-  outline: 0;
-}
-
-.contact-page ::-webkit-input-placeholder {
-  color: #888;
-  font-size: 1rem;
-}
-
-.contact-page :-moz-placeholder {
-  color: #888;
-}
-
-.contact-page ::-moz-placeholder {
-  color: #888;
-}
-
-.contact-page :-ms-input-placeholder {
-  color: #888;
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  .landing-page {
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: initial;
-  }
-  .landing-page .crowd-image {
-    display: none;
-  }
-  .bio-page {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20vh;
-    overflow: hidden;
-  }
-  .bio-page h1 {
-    color: #fff;
-    font-family: "Playfair Display";
-    font-size: 3rem;
-    font-weight: normal;
-    z-index: 6;
-    margin-bottom: 7vh;
-  }
-  .bio-page .box {
-    margin-bottom: -25vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .bio-page .box img {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-    width: 90%;
-    z-index: 5;
-    opacity: 0.6;
-  }
-  .bio-page .box p {
-    z-index: 6;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    width: 90%;
-    color: #fff;
-    font-family: "Lora";
-    font-size: 1.3rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 2rem;
-  }
-  .bio-page .box:nth-of-type(odd) img {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-  }
-  .bio-page .box:nth-of-type(odd) p {
-    margin-left: auto;
-    margin-right: auto;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .vids-page {
-    margin-top: 5vh;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .vids-page .vids-wrapper {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .vids-page .vids-wrapper iframe {
-    width: 95%;
-    height: 400px;
-  }
-  .vids-page .vids-wrapper iframe:nth-of-type(odd) {
-    width: 95%;
-    height: 400px;
-  }
-  .gigs-page {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10vh;
-    overflow: hidden;
-  }
-  .gigs-page .gigs-row {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    font-size: 0.8rem;
-    text-align: center;
-  }
-  .gigs-page .gigs-row .content-middle span:nth-of-type(1) {
-    font-size: 1.2rem;
-  }
-  .gigs-page .gigs-row .content-middle span:nth-of-type(2) {
-    font-size: 0.6rem;
-  }
-  .shop-page {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10vh;
-  }
-  .shop-page .buy-hover {
-    width: 280px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #fff;
-    font-family: "Lora";
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .shop-page .buy-hover .album-cover {
-    width: 280px;
-    height: 280px;
-    background-image: url(images/album.png);
-    background-size: cover;
-    background-position: center;
-  }
-  .shop-page .buy-hover .pricing {
-    width: 280px;
-    margin-top: 0.5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    font-size: 1rem;
-  }
-  .shop-page .buy-hover .order-button {
-    margin-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .contact-page {
-    margin-top: 10vh;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #01010A;
-  }
-  .contact-page img {
-    display: none;
-  }
-  .contact-page .container {
-    max-width: 100%;
-    width: 100%;
-    margin: 0;
-    position: relative;
-  }
-  .contact-page .container #contact {
-    overflow: hidden;
-  }
-  .contact-page .container #contact h1 {
-    font-size: 2rem;
-  }
+.gigs-page .gigs-row:nth-last-of-type(1) {
+  border-bottom: 1px solid #eb8a012d;
 }
 /*# sourceMappingURL=style.css.map */
