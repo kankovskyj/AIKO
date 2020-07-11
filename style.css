@@ -91,7 +91,7 @@ nav:hover {
 .landing-page .landing-img {
   width: 100vw;
   height: 85vh;
-  background-image: url("/images/landing.jpg");
+  background-image: url("images/landing.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position-x: center;
