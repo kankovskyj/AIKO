@@ -2,6 +2,7 @@ $('#toggle').click(function() {
    $(this).toggleClass('active');
    $('#overlay').toggleClass('open');
   });
+
 //FADE THE INDICATOR
 $(window).scroll(function(){
     if ($(this).scrollTop() > 50) {
@@ -18,14 +19,14 @@ $(".scroll-indie-container").click(function() {
   }, 3000);
 });
 
+$("#nav").click(function() {
+  $(".overlay").toggleClass("hide");
+})
 
-$(window).scroll(function(){
-  if ($(this).scrollTop() > 50) {
-     $('progress-icon').addClass('.fill-icon');
-  } else {
-     //$('#fade-out').removeClass('dissapear');
-  }
-});
+$(".js-close").click(function() {
+  $(".overlay").toggleClass("hide");
+})
+
 
 
 
@@ -51,7 +52,7 @@ var x = setInterval(function() {
 
   // Display the result in the element with id="demo"
   document.getElementById("exp-date").innerHTML = days + "d " + hours + "h "
-  + minutes + "m ";
+  + minutes + "m";
 
   // If the count down is finished, write some text
   if (distance < 0) {

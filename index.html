@@ -13,13 +13,27 @@
 
 <body>
 
-<div class="landing-page">
+<nav id="nav">
+
+</nav>
+
+<div class="overlay hide">
+  <ul>
+    <li class="js-close"><a href="#expiry-date">Expiration date</a></li>
+    <li class="js-close"><a href="#gigs">Gigs</a></li>
+    <li class="js-close"><a href="#vids">Vids</a></li>
+    <li class="js-close"><a href="">Contact</a></li>
+
+  </ul>
+</div>
+
+<div class="landing-page" id="expiry-date">
   <div class="landing-img"></div>
   <p id="exp-date"></p>
 </div>
 
-<div class="gigs-page">
-  <div class="gigs-row lax" data-lax-translate-y="0 0, vh 200"> 
+<div class="gigs-page" id="gigs">
+  <div class="gigs-row"> 
     <span class="date">JAN 27</span>
     
   <div class="content-middle">
@@ -29,7 +43,7 @@
   
     <a href="#" class="button-one">NOTIFY ME</a> 
   </div>
-  <div class="gigs-row lax" data-lax-translate-y="0 0, vh 200">
+  <div class="gigs-row">
     <span class="date">JAN 27</span>
     
   <div class="content-middle">
@@ -39,7 +53,7 @@
   
     <a href="#" class="button-one">NOTIFY ME</a> 
   </div>
-  <div class="gigs-row lax" data-lax-translate-y="0 0, vh 200">
+  <div class="gigs-row">
     <span class="date">JAN 27</span>
     
   <div class="content-middle">
@@ -49,7 +63,7 @@
   
     <a href="#" class="button-one">NOTIFY ME</a> 
   </div>
-  <div class="gigs-row lax" data-lax-translate-y="0 0, vh 200">
+  <div class="gigs-row">
     <span class="date">JAN 27</span>
     
   <div class="content-middle">
@@ -59,7 +73,7 @@
   
     <a href="#">NOTIFY ME</a> 
   </div>
-  <div class="gigs-row lax" data-lax-translate-y="0 0, vh 200">
+  <div class="gigs-row">
     <span class="date">JAN 27</span>
     
   <div class="content-middle">
@@ -69,7 +83,7 @@
   
     <a href="#">NOTIFY ME</a> 
   </div>
-  <div class="gigs-row lax" data-lax-translate-y="0 0, vh 200">
+  <div class="gigs-row">
     <span class="date">JAN 27</span>
     
   <div class="content-middle">
@@ -79,7 +93,7 @@
   
     <a href="#">NOTIFY ME</a> 
   </div>
-  <div class="gigs-row lax" data-lax-translate-y="0 0, vh 200">
+  <div class="gigs-row">
     <span class="date">JAN 27</span>
     
   <div class="content-middle">
@@ -90,6 +104,37 @@
     <a href="#">NOTIFY ME</a> 
   </div> 
 </div>
+
+<div class="vids-page" id="vids">
+  <div class="vids-wrapper">
+    <iframe src="https://www.youtube.com/embed/ER-CvZJEmJE?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/vxr6bmY1MeA?modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&fs=0&color=white&controls=0" frameborder="0"></iframe>
+    </div>
+</div>
+
+
+<section class="contact-page">
+
+  <img src="images/contact.jpg" alt="">
+
+  <div class="container">  
+    <form id="contact" action="" method="post">
+      <fieldset>
+        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Email Address" type="email" tabindex="2" required>
+      </fieldset>
+      <fieldset>
+        <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      </fieldset>
+    </form>
+  </div>
+
+</section>
 
 
 
