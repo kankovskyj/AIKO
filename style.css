@@ -360,5 +360,18 @@ nav:hover {
   .vids-page .vids-wrapper iframe:nth-of-type(1) {
     margin-top: 0rem;
   }
+  .contact-page {
+    width: 100%;
+  }
+  .contact-page img {
+    width: 40%;
+    display: none;
+  }
+  .contact-page .container {
+    max-width: 90%;
+    width: 90%;
+    margin: 0;
+    position: relative;
+  }
 }
 /*# sourceMappingURL=style.css.map */
