@@ -258,7 +258,14 @@ fieldset {
 
 
 @media (min-width: 320px) and (max-width: 480px) {
-
+  h2 {
+    position: absolute;
+    color: transparent;
+    font-size: 4rem;
+    -webkit-text-stroke: 0.1px $orange;
+    font-family: $font-heading;
+    opacity: 0.4;
+  }
   nav {
     left: 80%;
     top: 5%;
@@ -285,17 +292,14 @@ fieldset {
 
   .landing-page {
     .landing-img {
-      margin-top: 5vh;
+      //margin-top: 5vh;
       width: 100vw;
       height: 100vh;
       background-size: cover;
     }
     #exp-date {
-      width: 100%;
-      color: $offwhite;
       font-size: 2rem;
       text-align: center;
-      background-color: #eb8a0156;
       padding-top: 10px;
       padding-bottom: 10px;
       padding-left: 9px;
@@ -308,7 +312,6 @@ fieldset {
     margin-left: auto;
     margin-right: auto;
     margin-top: 10vh;
-    overflow: hidden;
     .gigs-row {
       padding-top: 0.5rem;
       padding-bottom: 0.5rem;

@@ -298,6 +298,14 @@ nav:hover {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+  h2 {
+    position: absolute;
+    color: transparent;
+    font-size: 4rem;
+    -webkit-text-stroke: 0.1px #EB8801;
+    font-family: "Playfair Display";
+    opacity: 0.4;
+  }
   nav {
     left: 80%;
     top: 5%;
@@ -321,17 +329,13 @@ nav:hover {
     -webkit-text-stroke: 1px #fff;
   }
   .landing-page .landing-img {
-    margin-top: 5vh;
     width: 100vw;
     height: 100vh;
     background-size: cover;
   }
   .landing-page #exp-date {
-    width: 100%;
-    color: #FAF9F5;
     font-size: 2rem;
     text-align: center;
-    background-color: #eb8a0156;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 9px;
@@ -341,7 +345,6 @@ nav:hover {
     margin-left: auto;
     margin-right: auto;
     margin-top: 10vh;
-    overflow: hidden;
   }
   .gigs-page .gigs-row {
     padding-top: 0.5rem;
