@@ -2,6 +2,15 @@
   visibility: hidden;
 }
 
+h2 {
+  position: absolute;
+  color: transparent;
+  font-size: 8rem;
+  -webkit-text-stroke: 0.1px #EB8801;
+  font-family: "Playfair Display";
+  opacity: 0.4;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -110,7 +119,7 @@ nav:hover {
   margin-left: auto;
   margin-right: auto;
   margin-top: 10vh;
-  overflow: hidden;
+  position: relative;
 }
 
 .gigs-page .gigs-row {
@@ -308,7 +317,8 @@ nav:hover {
     margin-top: 2rem;
   }
   .overlay ul li a {
-    color: #fff;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
   }
   .landing-page .landing-img {
     margin-top: 5vh;
