@@ -27,7 +27,17 @@ $(".js-close").click(function() {
   $(".overlay").toggleClass("hide");
 })
 
+$(".btn-hover1").hover(function () {
+    // over
+    $(".heading1").toggleClass("hide2");
+    $(".mail1").toggleClass("hide2");
+  });
 
+$(".btn-hover2").hover(function () {
+    // over
+    $(".heading2").toggleClass("hide2");
+    $(".mail2").toggleClass("hide2");
+  });
 
 
 

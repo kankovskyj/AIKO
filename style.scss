@@ -9,6 +9,9 @@ $font-text: "Lora";
 .hide {
   visibility: hidden;
 }
+.hide2 {
+  display: none;
+}
 h2 {
   position: absolute;
   color: transparent;
@@ -168,86 +171,70 @@ nav {
   margin-top: 10vh;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10vh;
   width: 70vw;
+  height: 70vh;
   display: flex;
   align-items: center;
-img {
-  width: 40%;
-}
-.container {
-	max-width: 45%;
-	width: 45%;
-	margin: 0;
-  position: relative;
-}
+  img {
+    width: 33vw;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .contact-wrapper {
+    display: flex;
+    width: 33vw;
+    flex-direction: column;
+    justify-content: space-evenly;
+    div {
+      color: $white;
+      background-color: $orange;
+      margin-left: auto;
+      font-size: 2rem;
+      font-family: $font-heading;
+      letter-spacing: 4px;
+      transition: background-color 0.4s ease-in;
+      width: 380px;
+      height: 100px;
+      line-height: 100px;
+      .heading {
+        margin-left: 1.2rem;
+      }
+      a {
+        margin-left: 1.2rem;
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+      }
+    }
+    div:hover {
+      background-color: $darkorange;
+      cursor: pointer;
+      animation: jump 0.4s;
+      animation-timing-function:linear;
+      animation-fill-mode:forwards;
+      animation-iteration-count: 1;
+    }
+    @keyframes jump {
+      0% {
+        scale: 1;
+        transform: translateY(0px);
+      }
+      100% {
+        scale: 1.1;
+        transform: translateY(-3px);
+      }
+      
+    }
+    div:nth-of-type(1) {
+      margin-bottom: 1rem;
+    }
+    div:nth-of-type(2) {
+      margin-top: 1rem;
+    }
+  }
 
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { 
-  font-family: $font-heading; background: $orange;
-}
-
-#contact {
-	background: none;
-	padding: 1.5rem;
-}
-
-#contact h1 {
-	color: $white;
-  font-family: $font-heading;
-  text-transform: uppercase;
-	font-size: 4.5rem;
-  font-weight: normal;
-  margin-bottom: 2rem;
-}
-
-fieldset {
-	border: none;
-	margin: 0 0 0.5rem;
-	min-width: 100%;
-	padding: 0;
-  width: 100%;
-}
-
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
-	width: 100%;
-	background: #eb8a0168;
-	margin: 0 0 5px;
-  padding: 10px;
-  border: none;
-  color: $white;
-  font-size: 1rem;
-}
-
-#contact textarea {
-	height: 200px;
-	max-width:100%;
-  resize:none;
-  color: $white;
-}
-
-#contact button[type="submit"] {
-	cursor:pointer;
-	width:50%;
-	border: none;
-	color: $white;
-	padding: 15px;
-	font-size: 1rem;
-}
-#contact input:focus, #contact textarea:focus {
-	outline:0;
-}
-::-webkit-input-placeholder {
- color: $white;
- font-size: 1rem;
-}
-:-moz-placeholder {
-  color: $white;
-}
-::-moz-placeholder {
-  color: $white;
-}
-:-ms-input-placeholder {
-  color: $white;
-}
 
 }
 
@@ -347,17 +334,46 @@ fieldset {
   }
 
   .contact-page {
-    width: 100%;
-  img {
-    width: 40%;
-    display: none;
-  }
-  .container {
-    max-width: 90%;
-    width: 90%;
-    margin: 0;
-    position: relative;
-  }
+    width: 90vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    img {
+     display: none;
+    }
+    .contact-wrapper {
+      width: 100%;
+      flex-direction: column;
+      div {
+        color: $white;
+        background-color: $orange;
+        margin-left: auto;
+        font-size: 2rem;
+        font-family: $font-heading;
+        letter-spacing: 4px;
+        transition: background-color 0.4s ease-in;
+        width: 100%;
+        height: 80px;
+        line-height: 80px;
+        .heading {
+          margin-left: 1rem;
+        }
+        a {
+          margin-left: 1rem;
+          color: white;
+          text-decoration: none;
+          font-size: 1rem;
+        }
+      }
+      div:nth-of-type(1) {
+        margin-bottom: 1rem;
+      }
+      div:nth-of-type(2) {
+        margin-top: 1rem;
+      }
+    }
+  
+  
   }
 
 
