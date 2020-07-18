@@ -29,7 +29,17 @@ $(".js-close").click(function() {
 
 $(".play-album").hover(function () {
   $(".landing-img").toggleClass("blur");
+  $(".play-album").toggleClass("hide3");
 });
+
+$(".landing-img").hover(function () {
+  $(".play-album").toggleClass("hide3");
+});
+
+$(".play-album").click(function () {
+  $(".streaming").toggleClass("hide");
+});
+
 
 
 

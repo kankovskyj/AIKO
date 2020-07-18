@@ -6,6 +6,10 @@
   display: none;
 }
 
+.hide3 {
+  opacity: 0;
+}
+
 .blur {
   -webkit-filter: blur(1px) grayscale(1);
           filter: blur(1px) grayscale(1);
@@ -19,6 +23,16 @@ h2 {
   -webkit-text-stroke: 0.1px #EB8801;
   font-family: "Playfair Display";
   opacity: 0.4;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #EB8801;
+}
+
+::selection {
+  color: #fff;
+  background: #EB8801;
 }
 
 * {
@@ -46,12 +60,14 @@ nav {
   height: 0.5rem;
   border-bottom: 4px solid #EB8801;
   border-top: 4px solid #EB8801;
-  -webkit-transition: border-color 0.4s;
-  transition: border-color 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 nav:hover {
   cursor: pointer;
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
 }
 
 .overlay {
@@ -133,20 +149,63 @@ nav:hover {
   margin: auto;
   width: 100px;
   height: 100px;
-  border: 6.5px solid #EB8801;
-  padding: 15px;
-  border-radius: 50%;
   background-position: center;
   background-image: url(images/play-button.png);
   background-size: 75px 75px;
   background-repeat: no-repeat;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  cursor: pointer;
+}
+
+.landing-page .play-album .streaming {
+  position: absolute;
+  bottom: 100%;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  left: 10px;
+}
+
+.landing-page .play-album .streaming a {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 75px;
+  margin-bottom: 1rem;
+  text-align: center;
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.landing-page .play-album .streaming a:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.landing-page .play-album .streaming a:nth-of-type(1) {
+  background-image: url(images/apple.png);
+}
+
+.landing-page .play-album .streaming a:nth-of-type(2) {
+  background-image: url(images/spotify.png);
+}
+
+.landing-page .play-album .streaming a:nth-of-type(3) {
+  background-image: url(images/youtube.png);
 }
 
 .landing-page .play-album:hover {
-  background-color: #B24401;
-  cursor: pointer;
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
 }
 
 .landing-page #exp-date {
@@ -386,6 +445,26 @@ nav:hover {
     height: 100vh;
     background-size: cover;
   }
+  .landing-page .play-album .streaming {
+    left: 20px;
+  }
+  .landing-page .play-album .streaming a {
+    width: 55px;
+    height: 55px;
+  }
+  .landing-page .play-album .streaming a:hover {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+  }
+  .landing-page .play-album .streaming a:nth-of-type(1) {
+    background-image: url(images/apple.png);
+  }
+  .landing-page .play-album .streaming a:nth-of-type(2) {
+    background-image: url(images/spotify.png);
+  }
+  .landing-page .play-album .streaming a:nth-of-type(3) {
+    background-image: url(images/youtube.png);
+  }
   .landing-page #exp-date {
     font-size: 2rem;
     text-align: center;
@@ -437,6 +516,9 @@ nav:hover {
             align-items: center;
   }
   .contact-page img {
+    display: none;
+  }
+  .contact-page h2 {
     display: none;
   }
   .contact-page .contact-wrapper {

@@ -12,6 +12,9 @@ $font-text: "Lora";
 .hide2 {
   display: none;
 }
+.hide3 {
+  opacity: 0;
+}
 .blur {
   filter: blur(1px) grayscale(1);
   opacity: 0.9;
@@ -23,6 +26,10 @@ h2 {
   -webkit-text-stroke: 0.1px $orange;
   font-family: $font-heading;
   opacity: 0.4;
+}
+::selection {
+  color: $white;
+  background: $orange;
 }
 
 //START
@@ -49,9 +56,10 @@ nav {
   height: 0.5rem;
   border-bottom: 4px solid $orange;
   border-top: 4px solid $orange;
-  transition: border-color 0.4s;
+  transition: all 0.4s;
   &:hover {
     cursor: pointer;
+    filter: brightness(110%);
   }
 }
 
@@ -113,18 +121,46 @@ nav {
     margin: auto;
     width: 100px;
     height: 100px;
-    border: 6.5px solid $orange;
-    padding: 15px;
-    border-radius: 50%;
     background-position: center;
     background-image: url(images/play-button.png);
     background-size:75px 75px;
     background-repeat: no-repeat;
     transition: 0.4s;
+    cursor: pointer;
+    .streaming {
+      position: absolute;
+      bottom: 100%;
+      opacity: 1;
+      display: flex;
+      flex-direction: column;  
+      left: 10px;    
+      a {
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 75px;
+        height: 75px;
+        margin-bottom: 1rem;
+        text-align: center;
+        filter: grayscale(50%);
+        transition: 0.4s;
+      }
+      a:hover {
+        filter: grayscale(0%);
+      }
+      a:nth-of-type(1) {
+        background-image: url(images/apple.png);
+      }
+      a:nth-of-type(2) {
+        background-image: url(images/spotify.png);
+      }
+      a:nth-of-type(3) {
+        background-image: url(images/youtube.png);
+      }
+    }
   }
   .play-album:hover {
-    background-color: $darkorange;
-    cursor: pointer;
+    filter: brightness(110%);
   }
   #exp-date {
     margin-left: auto;
@@ -315,6 +351,28 @@ nav {
       height: 100vh;
       background-size: cover;
     }
+    .play-album {
+      .streaming {
+        left: 20px;
+        a {
+          width: 55px;
+          height: 55px;
+
+        }
+        a:hover {
+          filter: grayscale(0%);
+        }
+        a:nth-of-type(1) {
+          background-image: url(images/apple.png);
+        }
+        a:nth-of-type(2) {
+          background-image: url(images/spotify.png);
+        }
+        a:nth-of-type(3) {
+          background-image: url(images/youtube.png);
+        }
+      }
+    }
     #exp-date {
       font-size: 2rem;
       text-align: center;
@@ -371,6 +429,9 @@ nav {
     align-items: center;
     img {
      display: none;
+    }
+    h2 {
+      display: none;
     }
     .contact-wrapper {
       width: 100%;
