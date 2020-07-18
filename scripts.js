@@ -27,6 +27,13 @@ $(".js-close").click(function() {
   $(".overlay").toggleClass("hide");
 })
 
+$(".play-album").hover(function () {
+  $(".landing-img").toggleClass("blur");
+});
+
+
+
+
 $(".btn-hover1").hover(function () {
     // over
     $(".heading1").toggleClass("hide2");
